@@ -3,13 +3,25 @@ import { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://sav-consulting.fr';
 
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 1,
-    },
-    // Ajoute ici d'autres pages si tu en crées (ex: /blog)
+  const routes = [
+    '',
+    '/a-propos',
+    '/notre-equipe',
+    '/etudes-de-cas',
+    '/processus-integration',
+    '/contact',
+    '/services/saisie-comptable',
+    '/services/externalisation-paie',
+    '/secteurs/immobilier',
+    '/securite',
+    '/mentions-legales',
+    '/confidentialite',
   ];
+
+  return routes.map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: route === '' ? 'weekly' : 'monthly' as any,
+    priority: route === '' ? 1 : 0.8,
+  }));
 }
