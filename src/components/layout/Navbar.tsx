@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { BarChart3, ArrowRight, Shield, Users, Rocket, FileText, Zap, LucideIcon } from "lucide-react";
+import { BarChart3, ArrowRight, Shield, Users, Rocket, FileText, Zap, LucideIcon, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
