@@ -129,7 +129,7 @@ export function Pricing() {
 
                     <CardFooter className="pt-4 pb-8 px-6">
                       <Button className={cn("w-full h-12 text-base font-bold shadow-lg", activeTab === 'pilote' ? "bg-blue-600 hover:bg-blue-700 shadow-blue-200" : "bg-white text-slate-900 border border-slate-200 hover:bg-slate-50")} asChild>
-                         <a href="#contact">
+                         <a href={`?subject=${activeTab}#contact`}>
                            {activeTab === 'pilote' && <Zap className="mr-2 h-4 w-4 fill-current" />}
                            {plans[activeTab].cta}
                          </a>
@@ -170,7 +170,7 @@ export function Pricing() {
               </CardContent>
               <CardFooter className="pt-8">
                 <Button variant="outline" className="w-full h-12" asChild>
-                  <a href="#contact">Demander un devis</a>
+                  <a href="?subject=compta#contact">Demander un devis</a>
                 </Button>
               </CardFooter>
             </Card>
@@ -198,7 +198,7 @@ export function Pricing() {
               </CardContent>
               <CardFooter className="pt-8 pb-8 px-8">
                 <Button className="w-full h-12 bg-blue-600 hover:bg-blue-700 font-bold" asChild>
-                  <a href="#contact">
+                  <a href="?subject=pilote#contact">
                     <Zap className="mr-2 h-4 w-4" /> Démarrer le Pilote
                   </a>
                 </Button>
@@ -229,7 +229,7 @@ export function Pricing() {
               </CardContent>
               <CardFooter className="pt-8">
                 <Button variant="outline" className="w-full h-12" asChild>
-                  <a href="#contact">Externaliser la paie</a>
+                  <a href="?subject=paie#contact">Externaliser la paie</a>
                 </Button>
               </CardFooter>
             </Card>

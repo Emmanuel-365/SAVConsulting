@@ -121,7 +121,7 @@ export function Hero() {
               className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto pb-8 md:pb-0"
             >
               <Button size="lg" className="h-12 md:h-14 px-8 text-base bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-500/30 transition-all w-full sm:w-auto" asChild aria-label="Réserver un audit gratuit">
-                <a href="#contact">
+                <a href="?subject=audit#contact">
                   Réserver un Audit <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>

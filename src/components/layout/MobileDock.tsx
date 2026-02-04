@@ -37,15 +37,22 @@ export function MobileDock() {
               </Button>
             </a>
 
-            {/* Bouton Principal (Large) */}
-            <a href="#contact" className="flex-1" aria-label="Réserver un audit maintenant">
-              <Button size="lg" className="w-full h-12 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold shadow-lg shadow-blue-900/20">
-                <CalendarCheck className="mr-2 h-5 w-5" />
-                Réserver Audit
-              </Button>
-            </a>
-            
-          </div>
+                            {/* Bouton Principal (Large) */}
+
+                            <a href="?subject=audit#contact" className="flex-1" aria-label="Réserver un audit maintenant">
+
+                              <Button size="lg" className="w-full h-12 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold shadow-lg shadow-blue-900/20">
+
+                                <CalendarCheck className="mr-2 h-5 w-5" />
+
+                                Réserver Audit
+
+                              </Button>
+
+                            </a>
+
+                    
+                      </div>
         </motion.div>
       )}
     </AnimatePresence>

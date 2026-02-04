@@ -78,7 +78,7 @@ export function Navbar() {
                 </Link>
               ))}
               <Button size="sm" className="rounded-full bg-slate-900 text-white hover:bg-blue-600 transition-all px-6" asChild>
-                <Link href="#contact">
+                <Link href="?subject=audit#contact">
                   Audit Gratuit <ArrowRight className="ml-2 h-3 w-3" />
                 </Link>
               </Button>
@@ -147,7 +147,7 @@ export function Navbar() {
                 <div className="flex flex-col gap-2">
                   <p className="text-sm font-bold uppercase tracking-wider text-slate-400">Prêt à commencer ?</p>
                   <Button size="lg" className="rounded-full bg-blue-600 hover:bg-blue-700 h-16 text-xl shadow-xl shadow-blue-200" asChild>
-                    <Link href="#contact" onClick={() => setIsOpen(false)}>
+                    <Link href="?subject=pilote#contact" onClick={() => setIsOpen(false)}>
                       Démarrer un Pilote Gratuit
                     </Link>
                   </Button>
