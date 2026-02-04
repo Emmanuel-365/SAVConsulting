@@ -20,7 +20,7 @@ const steps = [
   {
     icon: Settings2,
     title: "Mise en place Technique",
-    desc: "Création des accès sécurisés (VPN/TSE), paramétrage des workflows et tests de connexion.",
+    desc: "Définition des procédures, checklists, contrôles qualité et paramétrage des accès sécurisés (VPN/TSE).",
     number: "03"
   },
   {

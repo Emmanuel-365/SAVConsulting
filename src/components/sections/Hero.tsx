@@ -111,23 +111,21 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-base md:text-xl text-slate-600 max-w-lg leading-relaxed"
             >
-              La solution marque blanche pour experts-comptables.
-              Libérez vos collaborateurs des tâches à faible valeur ajoutée.
+              Gagnez du temps, économisez en masse salariale et préservez votre relation client. La solution marque blanche pour cabinets modernes.
             </motion.p>
 
-            {/* CTA Buttons */}
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto pb-8 md:pb-0"
             >
-              <Button size="lg" className="h-12 md:h-14 px-8 text-base bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-500/30 transition-all w-full sm:w-auto" asChild>
+              <Button size="lg" className="h-12 md:h-14 px-8 text-base bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-500/30 transition-all w-full sm:w-auto" asChild aria-label="Réserver un audit gratuit">
                 <a href="#contact">
                   Réserver un Audit <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="outline" size="lg" className="h-12 md:h-14 px-8 text-base border-slate-200 hover:bg-slate-50 hover:text-blue-600 transition-colors w-full sm:w-auto" asChild>
+              <Button variant="outline" size="lg" className="h-12 md:h-14 px-8 text-base border-slate-200 hover:bg-slate-50 hover:text-blue-600 transition-colors w-full sm:w-auto" asChild aria-label="Consulter la grille tarifaire">
                 <a href="#pricing">Voir la grille tarifaire</a>
               </Button>
             </motion.div>

@@ -35,7 +35,13 @@ export function WhyUs() {
         {/* Header Mobile Only (Pour guider) */}
         <div className="md:hidden text-center mb-8">
            <h2 className="text-2xl font-bold text-slate-900">Pourquoi nous choisir ?</h2>
-           <p className="text-sm text-slate-500 mt-2">Glissez pour voir nos atouts 👉</p>
+           <p className="text-sm text-slate-500 mt-2">Spécialisé cabinets de 0 à 50 collaborateurs.</p>
+        </div>
+
+        {/* Desktop Header Added for completeness */}
+        <div className="hidden md:block text-center mb-16 max-w-2xl mx-auto">
+           <h2 className="text-3xl font-extrabold text-slate-900 mb-4">Un partenaire discret, fiable et sécurisé.</h2>
+           <p className="text-slate-600">Une solution pensée pour les cabinets de 0 à 50 collaborateurs en pleine croissance.</p>
         </div>
 
         {/* CONTAINER: Grid on Desktop / Snap Scroll on Mobile */}

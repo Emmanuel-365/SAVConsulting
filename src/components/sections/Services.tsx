@@ -167,16 +167,20 @@ export function Services() {
                      </div>
                      <span className="text-xs font-bold uppercase tracking-wider text-slate-500 border border-slate-700 px-2 py-1 rounded">Notre limite</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Ce qu'on ne fait PAS</h3>
+                  <h3 className="text-2xl font-bold text-white mb-2">Ce qu&apos;on ne fait PAS</h3>
                   <p className="text-slate-400 leading-relaxed text-sm md:text-base">
-                     Pas de relation client, pas de conseil.
+                     Pas de relation client, pas de conseil, pas de décision technique ni de validation fiscale.
                   </p>
                </div>
                
-               <div className="flex flex-col gap-3 w-full md:w-auto">
+               <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
                   <div className="flex items-center gap-3 bg-slate-800 p-3 rounded-xl border border-slate-700 opacity-60">
                     <XCircle className="h-4 w-4 text-red-500" />
-                    <span className="text-sm font-medium line-through decoration-slate-500">Contact client</span>
+                    <span className="text-xs font-medium line-through decoration-slate-500">Validation comptable</span>
+                  </div>
+                  <div className="flex items-center gap-3 bg-slate-800 p-3 rounded-xl border border-slate-700 opacity-60">
+                    <XCircle className="h-4 w-4 text-red-500" />
+                    <span className="text-xs font-medium line-through decoration-slate-500">Décision technique</span>
                   </div>
                </div>
              </div>
