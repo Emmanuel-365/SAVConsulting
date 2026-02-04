@@ -53,31 +53,16 @@ export default function AccountingServicePage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-4">
-              <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100">
-                <Zap className="text-blue-600 mb-4" size={32} />
-                <h4 className="font-bold text-slate-900 mb-2">Rapidité</h4>
-                <p className="text-sm text-slate-500">Traitement de vos pièces sous 24h à 48h selon l&apos;urgence.</p>
-              </div>
-              <div className="bg-blue-600 p-8 rounded-3xl text-white shadow-xl shadow-blue-200">
-                <Shield className="text-blue-200 mb-4" size={32} />
-                <h4 className="font-bold mb-2">Fiabilité</h4>
-                <p className="text-sm text-blue-100">Double contrôle systématique par nos superviseurs seniors.</p>
-              </div>
-            </div>
-            <div className="space-y-4 pt-12">
-              <div className="bg-slate-900 p-8 rounded-3xl text-white">
-                <BarChart3 className="text-blue-400 mb-4" size={32} />
-                <h4 className="font-bold mb-2">Transparence</h4>
-                <p className="text-sm text-slate-400">Suivi en temps réel de l&apos;avancement sur vos propres outils.</p>
-              </div>
-              <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100">
-                <CheckCircle2 className="text-green-600 mb-4" size={32} />
-                <h4 className="font-bold text-slate-900 mb-2">Qualité</h4>
-                <p className="text-sm text-slate-500">Respect scrupuleux de votre plan comptable interne.</p>
-              </div>
-            </div>
+          <div className="relative">
+             {/* Illustration unDraw personnalisée */}
+             <div className="bg-slate-50 rounded-3xl p-8 border border-slate-100 relative overflow-hidden">
+                <img 
+                  src="https://undraw.co/api/illustrations/svg?name=filing_system&color=2563eb" 
+                  alt="Illustration Saisie Comptable" 
+                  className="w-full h-auto opacity-90 group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent" />
+             </div>
           </div>
         </div>
       </section>

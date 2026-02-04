@@ -47,10 +47,16 @@
   
   --animate-marquee: marquee 25s linear infinite;
   --animate-blob: blob 7s infinite;
+  --animate-grid: grid 15s linear infinite;
   
   @keyframes marquee {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); } 
+  }
+
+  @keyframes grid {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
   }
 
   @keyframes blob {
