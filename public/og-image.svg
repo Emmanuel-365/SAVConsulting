@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#020617"/>
+  <circle cx="1000" cy="100" r="400" fill="#2563eb" opacity="0.15"/>
+  <circle cx="100" cy="500" r="300" fill="#4f46e5" opacity="0.1"/>
+  
+  <!-- Content -->
+  <rect x="100" y="240" width="60" height="60" rx="12" fill="#2563eb"/>
+  <path d="M115 285V255H125L135 270L145 255H155V285H145V265L135 280L125 265V285H115Z" fill="white"/>
+  
+  <text x="180" y="285" font-family="Arial, sans-serif" font-weight="900" font-size="64" fill="white">
+    SAV<tspan fill="#3b82f6">Consulting</tspan>
+  </text>
+  
+  <text x="100" y="380" font-family="Arial, sans-serif" font-weight="bold" font-size="42" fill="#94a3b8">
+    Externalisez la production, gardez le conseil.
+  </text>
+  
+  <text x="100" y="450" font-family="Arial, sans-serif" font-size="24" fill="#64748b" letter-spacing="2">
+    PRODUCTION MARQUE BLANCHE • QUALITÉ FRANÇAISE
+  </text>
+  
+  <!-- Border -->
+  <rect x="20" y="20" width="1160" height="590" rx="20" stroke="#1e293b" stroke-width="2" fill="none"/>
+</svg>

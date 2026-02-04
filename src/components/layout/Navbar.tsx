@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { BarChart3, ArrowRight, X, ChevronDown, Shield, Users, Rocket, FileText, Zap, Mail } from "lucide-react";
+import { BarChart3, ArrowRight, Shield, Users, Rocket, FileText, Zap, LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
@@ -190,7 +190,7 @@ export function Navbar() {
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a"> & { icon?: any }
+  React.ComponentPropsWithoutRef<"a"> & { icon?: LucideIcon }
 >(({ className, title, children, icon: Icon, ...props }, ref) => {
   return (
     <li>

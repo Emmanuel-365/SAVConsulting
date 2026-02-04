@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg", 
+        url: "/og-image.svg", 
         width: 1200,
         height: 630,
         alt: "SAV Consulting - Externalisation Comptable",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SAV Consulting | Externalisation Comptable",
     description: "Libérez votre cabinet des tâches à faible valeur ajoutée.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.svg"],
   },
   icons: {
     icon: "/favicon.svg",
