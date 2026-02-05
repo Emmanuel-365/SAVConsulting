@@ -16,7 +16,7 @@ export function Hero() {
           alt="SAV Consulting - Expertise et Conseil"
           fill
           priority
-          quality={90}
+          quality={40}
           className="object-cover opacity-30 grayscale"
           sizes="100vw"
         />
