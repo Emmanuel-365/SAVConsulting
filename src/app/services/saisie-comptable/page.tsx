@@ -56,7 +56,7 @@ export default function AccountingServicePage() {
           <div className="relative">
              <div className="bg-slate-50 rounded-3xl p-8 border border-slate-100 relative overflow-hidden group">
                 <img 
-                  src="https://undraw.co/api/illustrations/svg?name=filing_system&color=10b981" 
+                  src="/saisie-comptable.jpg" 
                   alt="Illustration Saisie Comptable" 
                   className="w-full h-auto opacity-90 group-hover:scale-105 transition-transform duration-500"
                 />
