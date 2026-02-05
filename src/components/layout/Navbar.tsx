@@ -118,10 +118,17 @@ export function Navbar() {
             </div>
 
             {/* MOBILE BURGER BUTTON */}
-            <button onClick={() => setIsOpen(!isOpen)} className="md:hidden relative z-[110] p-2 -mr-2 flex flex-col gap-1.5 items-center justify-center w-10 h-10 group bg-emerald-50 rounded-full" aria-label="Menu">
-              <motion.span animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }} className="w-5 h-0.5 bg-emerald-900 rounded-full" />
-              <motion.span animate={isOpen ? { opacity: 0 } : { opacity: 1 }} className="w-5 h-0.5 bg-emerald-900 rounded-full" />
-              <motion.span animate={isOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }} className="w-5 h-0.5 bg-emerald-900 rounded-full" />
+            <button 
+              onClick={() => setIsOpen(!isOpen)} 
+              className={cn(
+                "md:hidden relative z-[110] p-2 -mr-2 flex flex-col gap-1.5 items-center justify-center w-10 h-10 group rounded-full transition-all duration-300",
+                isScrolled ? "bg-emerald-100/50" : "bg-white/10 backdrop-blur-md border border-white/10"
+              )} 
+              aria-label="Menu"
+            >
+              <motion.span animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }} className={cn("w-5 h-0.5 rounded-full transition-colors", isScrolled || isOpen ? "bg-emerald-950" : "bg-white")} />
+              <motion.span animate={isOpen ? { opacity: 0 } : { opacity: 1 }} className={cn("w-5 h-0.5 rounded-full transition-colors", isScrolled || isOpen ? "bg-emerald-950" : "bg-white")} />
+              <motion.span animate={isOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }} className={cn("w-5 h-0.5 rounded-full transition-colors", isScrolled || isOpen ? "bg-emerald-950" : "bg-white")} />
             </button>
           </div>
         </nav>
