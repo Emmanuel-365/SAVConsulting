@@ -56,8 +56,9 @@ export function Hero() {
               className="text-5xl sm:text-7xl md:text-8xl font-black tracking-tighter text-white leading-[0.9]"
             >
               Externalisez la <br />
+              production, <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-rose-300">
-                production.
+                vendez du conseil.
               </span>
             </motion.h1>
             
