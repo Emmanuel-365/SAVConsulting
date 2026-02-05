@@ -68,7 +68,7 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-lg md:text-2xl text-emerald-100/80 max-w-xl leading-relaxed"
             >
-              Gagnez du temps, économisez en masse salariale et préservez votre relation client.
+              Gagnez du temps, économisez en masse salariale et préservez votre relation client. La solution marque blanche pour cabinets modernes.
             </motion.p>
 
             <motion.div 
