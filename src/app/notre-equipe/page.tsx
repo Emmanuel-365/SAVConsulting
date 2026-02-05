@@ -49,29 +49,29 @@ export default function TeamPage() {
           {team.map((member, i) => (
             <div key={i} className="group text-center">
               <div className="relative w-48 h-48 mx-auto mb-6">
-                <div className="absolute inset-0 bg-emerald-600 rounded-full rotate-6 group-hover:rotate-12 transition-transform duration-300 opacity-20" />
-                <div className="absolute inset-0 bg-white rounded-full flex items-center justify-center border-4 border-emerald-50 shadow-xl overflow-hidden group-hover:border-rose-100 transition-colors">
-                   <span className="text-4xl font-black text-emerald-200 group-hover:text-rose-200 transition-colors">{member.initials}</span>
+                <div className="absolute inset-0 bg-blue-600 rounded-full rotate-6 group-hover:rotate-12 transition-transform duration-300 opacity-20" />
+                <div className="absolute inset-0 bg-white rounded-full flex items-center justify-center border-4 border-blue-50 shadow-xl overflow-hidden group-hover:border-rose-100 transition-colors">
+                   <span className="text-4xl font-black text-blue-200 group-hover:text-rose-200 transition-colors">{member.initials}</span>
                 </div>
               </div>
               <h3 className="text-2xl font-bold text-slate-900">{member.name}</h3>
-              <p className="text-emerald-600 font-semibold text-sm uppercase tracking-wider mb-4">{member.role}</p>
+              <p className="text-blue-600 font-semibold text-sm uppercase tracking-wider mb-4">{member.role}</p>
               <p className="text-slate-500 text-sm leading-relaxed">{member.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="py-24 bg-emerald-950 text-white">
+      <section className="py-24 bg-blue-950 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="flex items-start gap-6">
-              <div className="h-14 w-14 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-400/20">
+              <div className="h-14 w-14 rounded-2xl bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0 border border-blue-400/20">
                 <GraduationCap size={28} />
               </div>
               <div>
                 <h4 className="text-xl font-bold mb-2">Diplômés d&apos;État</h4>
-                <p className="text-emerald-100/60 text-sm">Formation académique rigoureuse en comptabilité et gestion.</p>
+                <p className="text-blue-100/60 text-sm">Formation académique rigoureuse en comptabilité et gestion.</p>
               </div>
             </div>
             <div className="flex items-start gap-6">
@@ -80,16 +80,16 @@ export default function TeamPage() {
               </div>
               <div>
                 <h4 className="text-xl font-bold mb-2">Expérience Cabinet</h4>
-                <p className="text-emerald-100/60 text-sm">Nos superviseurs ont tous travaillé en cabinet d&apos;expertise français.</p>
+                <p className="text-blue-100/60 text-sm">Nos superviseurs ont tous travaillé en cabinet d&apos;expertise français.</p>
               </div>
             </div>
             <div className="flex items-start gap-6">
-              <div className="h-14 w-14 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-400/20">
+              <div className="h-14 w-14 rounded-2xl bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0 border border-blue-400/20">
                 <Award size={28} />
               </div>
               <div>
                 <h4 className="text-xl font-bold mb-2">Veille Continue</h4>
-                <p className="text-emerald-100/60 text-sm">Mise à jour régulière sur les lois de finances et conventions.</p>
+                <p className="text-blue-100/60 text-sm">Mise à jour régulière sur les lois de finances et conventions.</p>
               </div>
             </div>
           </div>

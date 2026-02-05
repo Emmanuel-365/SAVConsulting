@@ -50,19 +50,19 @@ export default function CaseStudiesPage() {
           {cases.map((study, i) => (
             <div key={i} className="flex flex-col md:flex-row gap-12 items-start border-b border-slate-100 pb-20 last:border-0 last:pb-0">
               <div className="md:w-1/3 sticky top-32">
-                <div className="p-8 rounded-3xl bg-emerald-50 border border-emerald-100">
+                <div className="p-8 rounded-3xl bg-blue-50 border border-blue-100">
                    <h3 className="font-bold text-xl text-slate-900 mb-6">{study.title}</h3>
                    <div className="space-y-6">
                       {study.stats.map((stat, j) => (
                         <div key={j}>
-                           <div className="text-3xl font-black text-emerald-600">{stat.value}</div>
+                           <div className="text-3xl font-black text-blue-600">{stat.value}</div>
                            <div className="text-xs text-slate-500 uppercase font-semibold">{stat.label}</div>
                         </div>
                       ))}
                    </div>
                    <div className="mt-8 flex flex-wrap gap-2">
                       {study.tags.map((tag, k) => (
-                        <span key={k} className="px-3 py-1 bg-white border border-emerald-100 rounded-full text-xs font-medium text-emerald-700">
+                        <span key={k} className="px-3 py-1 bg-white border border-blue-100 rounded-full text-xs font-medium text-blue-700">
                            {tag}
                         </span>
                       ))}
@@ -79,21 +79,21 @@ export default function CaseStudiesPage() {
                     <p className="text-lg text-slate-600 leading-relaxed">{study.problem}</p>
                  </div>
                  <div>
-                    <div className="flex items-center gap-3 mb-3 text-emerald-600 font-bold">
+                    <div className="flex items-center gap-3 mb-3 text-blue-600 font-bold">
                        <TrendingUp size={20} />
                        <h4>La Solution SAV Consulting</h4>
                     </div>
                     <p className="text-lg text-slate-600 leading-relaxed">{study.solution}</p>
                  </div>
                  <div>
-                    <div className="flex items-center gap-3 mb-3 text-emerald-700 font-bold">
+                    <div className="flex items-center gap-3 mb-3 text-blue-700 font-bold">
                        <CheckCircle size={20} />
                        <h4>Les Résultats</h4>
                     </div>
                     <p className="text-lg text-slate-600 leading-relaxed font-medium">{study.result}</p>
                  </div>
                  <div className="pt-6">
-                    <Button variant="outline" className="rounded-full border-emerald-200 text-emerald-600 hover:bg-emerald-50" asChild>
+                    <Button variant="outline" className="rounded-full border-blue-200 text-blue-600 hover:bg-blue-50" asChild>
                        <Link href="/contact?subject=audit">Obtenir les mêmes résultats</Link>
                     </Button>
                  </div>
@@ -103,10 +103,10 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-emerald-600 text-white text-center">
+      <section className="py-24 bg-blue-600 text-white text-center">
          <div className="container mx-auto px-4 max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Prêt à écrire votre success story ?</h2>
-            <Button size="lg" className="bg-white text-emerald-600 hover:bg-rose-50 h-14 px-8 rounded-full shadow-xl font-bold transition-colors" asChild>
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-rose-50 h-14 px-8 rounded-full shadow-xl font-bold transition-colors" asChild>
                <Link href="/contact?subject=audit">Réserver mon Audit</Link>
             </Button>
          </div>

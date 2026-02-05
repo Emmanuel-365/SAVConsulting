@@ -60,7 +60,7 @@ export function KeyFigures() {
               <div className={`text-3xl md:text-5xl font-black tracking-tighter ${stat.color}`}>
                 <Counter value={stat.value} suffix={stat.suffix} />
               </div>
-              <p className="text-[10px] md:text-xs font-black text-emerald-950/40 uppercase tracking-[0.2em]">
+              <p className="text-[10px] md:text-xs font-black text-blue-950/40 uppercase tracking-[0.2em]">
                 {stat.label}
               </p>
             </motion.div>

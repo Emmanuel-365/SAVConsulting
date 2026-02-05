@@ -14,7 +14,7 @@ export function Services() {
   return (
     <section id="services" className="py-20 md:py-32 bg-slate-50 relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-100/40 via-transparent to-transparent pointer-events-none" />
+      <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-100/40 via-transparent to-transparent pointer-events-none" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-20">
@@ -56,10 +56,10 @@ export function Services() {
             viewport={{ once: true }}
             className="snap-center shrink-0 w-[85vw] md:w-auto md:col-span-2 group relative overflow-hidden rounded-3xl border bg-white p-6 md:p-8 shadow-sm transition-all hover:shadow-md min-h-[320px] flex flex-col justify-between"
           >
-            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-emerald-50 blur-2xl transition-all group-hover:bg-rose-50" />
+            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-blue-50 blur-2xl transition-all group-hover:bg-rose-50" />
             
             <div className="relative z-10">
-               <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50 text-slate-600 group-hover:bg-rose-500 group-hover:text-white transition-all duration-300">
+               <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-slate-600 group-hover:bg-rose-500 group-hover:text-white transition-all duration-300">
                   <FileSpreadsheet className="h-6 w-6" />
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Saisie & Révision</h3>
@@ -72,7 +72,7 @@ export function Services() {
             <div className="mt-8 flex gap-4 opacity-80">
                  <div className="bg-slate-50 rounded-lg p-3 border border-slate-100 w-1/2">
                     <div className="flex items-center gap-2 mb-2">
-                       <div className="h-2 w-2 rounded-full bg-green-400" />
+                       <div className="h-2 w-2 rounded-full bg-blue-400" />
                        <div className="h-2 w-12 bg-slate-200 rounded" />
                     </div>
                     <div className="space-y-1">
@@ -112,7 +112,7 @@ export function Services() {
              
              <div className="mt-8">
                 <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden">
-                    <div className="h-full bg-emerald-500 w-[100%] rounded-full" />
+                    <div className="h-full bg-blue-500 w-[100%] rounded-full" />
                 </div>
                 <div className="mt-2 text-xs text-slate-400 font-medium flex justify-between">
                     <span>Conformité</span>
@@ -126,7 +126,7 @@ export function Services() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="snap-center shrink-0 w-[85vw] md:w-auto group relative overflow-hidden rounded-3xl bg-emerald-600 p-6 md:p-8 text-white shadow-xl transition-all hover:scale-[1.02] duration-500 flex flex-col justify-between"
+            className="snap-center shrink-0 w-[85vw] md:w-auto group relative overflow-hidden rounded-3xl bg-blue-600 p-6 md:p-8 text-white shadow-xl transition-all hover:scale-[1.02] duration-500 flex flex-col justify-between"
           >
             <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.1]" />
             <div className="absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-rose-500 blur-3xl opacity-30" />
@@ -136,7 +136,7 @@ export function Services() {
                 <Users className="h-6 w-6" />
               </div>
               <h3 className="text-2xl font-bold mb-2">Social & Paie</h3>
-              <p className="text-emerald-50 mb-8 leading-relaxed text-sm">
+              <p className="text-blue-50 mb-8 leading-relaxed text-sm">
                 Nos gestionnaires maîtrisent Silae et les conventions.
               </p>
             </div>
@@ -156,7 +156,7 @@ export function Services() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="snap-center shrink-0 w-[85vw] md:w-auto md:col-span-2 group relative overflow-hidden rounded-3xl bg-emerald-950 p-6 md:p-8 text-slate-200 shadow-sm flex flex-col justify-center border border-emerald-900"
+            className="snap-center shrink-0 w-[85vw] md:w-auto md:col-span-2 group relative overflow-hidden rounded-3xl bg-blue-950 p-6 md:p-8 text-slate-200 shadow-sm flex flex-col justify-center border border-blue-900"
           >
              <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                <div className="flex-1">
@@ -173,11 +173,11 @@ export function Services() {
                </div>
                
                <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
-                  <div className="flex items-center gap-3 bg-emerald-900/50 p-3 rounded-xl border border-emerald-800 opacity-60">
+                  <div className="flex items-center gap-3 bg-blue-900/50 p-3 rounded-xl border border-blue-800 opacity-60">
                     <XCircle className="h-4 w-4 text-rose-500" />
                     <span className="text-xs font-medium line-through decoration-slate-500">Validation comptable</span>
                   </div>
-                  <div className="flex items-center gap-3 bg-emerald-900/50 p-3 rounded-xl border border-emerald-800 opacity-60">
+                  <div className="flex items-center gap-3 bg-blue-900/50 p-3 rounded-xl border border-blue-800 opacity-60">
                     <XCircle className="h-4 w-4 text-rose-500" />
                     <span className="text-xs font-medium line-through decoration-slate-500">Décision technique</span>
                   </div>

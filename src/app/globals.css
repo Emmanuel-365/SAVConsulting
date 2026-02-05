@@ -57,46 +57,46 @@
 :root {
   --radius: 0.75rem;
   --background: oklch(1 0 0);
-  --foreground: oklch(0.12 0.02 160); /* Très sombre vert */
+  --foreground: oklch(0.15 0.02 240); /* Bleu très sombre */
   
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.12 0.02 160);
+  --card-foreground: oklch(0.15 0.02 240);
   
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.12 0.02 160);
+  --popover-foreground: oklch(0.15 0.02 240);
   
-  /* PRIMARY : Vert Émeraude Profond */
-  --primary: oklch(0.35 0.08 160); 
-  --primary-foreground: oklch(0.98 0.01 160);
+  /* PRIMARY : Bleu Royal Professionnel */
+  --primary: oklch(0.45 0.18 250); 
+  --primary-foreground: oklch(0.98 0.01 240);
   
-  /* SECONDARY : Rose Vif mais élégant (Plus présent) */
-  --secondary: oklch(0.96 0.04 350); 
+  /* SECONDARY : Rose Poudré Doux */
+  --secondary: oklch(0.96 0.04 350);
   --secondary-foreground: oklch(0.45 0.15 350);
   
-  /* ACCENT : Rose Framboise/Magenta (Pour les boutons et l'action) */
+  /* ACCENT : Rose Vibrant pour l'action */
   --accent: oklch(0.65 0.22 350);
   --accent-foreground: oklch(0.98 0.01 350);
   
-  --muted: oklch(0.96 0.01 160);
-  --muted-foreground: oklch(0.45 0.02 160);
+  --muted: oklch(0.96 0.01 240);
+  --muted-foreground: oklch(0.45 0.02 240);
   
   --destructive: oklch(0.57 0.24 27.3);
-  --border: oklch(0.92 0.01 160);
-  --input: oklch(0.92 0.01 160);
-  --ring: oklch(0.35 0.08 160);
+  --border: oklch(0.92 0.01 240);
+  --input: oklch(0.92 0.01 240);
+  --ring: oklch(0.45 0.18 250);
 }
 
 .dark {
-  --background: oklch(0.12 0.02 160);
-  --foreground: oklch(0.98 0.01 160);
-  --card: oklch(0.15 0.02 160);
-  --card-foreground: oklch(0.98 0.01 160);
-  --primary: oklch(0.5 0.12 160);
-  --primary-foreground: oklch(0.12 0.02 160);
-  --secondary: oklch(0.25 0.05 340);
-  --secondary-foreground: oklch(0.92 0.04 340);
-  --accent: oklch(0.4 0.1 340);
-  --accent-foreground: oklch(0.98 0.01 160);
+  --background: oklch(0.15 0.02 240);
+  --foreground: oklch(0.98 0.01 240);
+  --card: oklch(0.18 0.02 240);
+  --card-foreground: oklch(0.98 0.01 240);
+  --primary: oklch(0.55 0.15 250);
+  --primary-foreground: oklch(0.15 0.02 240);
+  --secondary: oklch(0.25 0.05 350);
+  --secondary-foreground: oklch(0.92 0.04 350);
+  --accent: oklch(0.4 0.1 350);
+  --accent-foreground: oklch(0.98 0.01 240);
 }
 
 @layer base {
@@ -108,7 +108,6 @@
   }
 }
 
-/* Hide scrollbar */
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
 }

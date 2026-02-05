@@ -41,7 +41,7 @@ export function Expertise() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-3xl md:text-5xl font-extrabold text-emerald-950 mb-4 md:mb-6"
+              className="text-3xl md:text-5xl font-extrabold text-blue-950 mb-4 md:mb-6"
             >
               Une expertise métier<br/> <span className="text-slate-600">selon votre secteur.</span>
             </motion.h2>
@@ -68,7 +68,7 @@ export function Expertise() {
               <div className="h-14 w-14 rounded-2xl bg-rose-50 border border-rose-100 text-rose-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-sm group-hover:bg-rose-600 group-hover:text-white">
                 <sector.icon size={28} />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-emerald-950">{sector.title}</h3>
+              <h3 className="text-xl font-bold mb-3 text-blue-950">{sector.title}</h3>
               <p className="text-slate-500 text-sm leading-relaxed">
                 {sector.desc}
               </p>

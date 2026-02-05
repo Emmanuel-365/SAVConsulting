@@ -16,9 +16,9 @@ export function TrustBar() {
   ];
 
   return (
-    <section className="py-8 md:py-10 border-y bg-emerald-50/10 border-emerald-100/20 overflow-hidden">
+    <section className="py-8 md:py-10 border-y bg-blue-50/10 border-blue-100/20 overflow-hidden">
       <div className="container mx-auto px-4">
-        <p className="text-center text-[10px] md:text-xs font-semibold uppercase tracking-wider text-emerald-900/40 mb-6 md:mb-8">
+        <p className="text-center text-[10px] md:text-xs font-semibold uppercase tracking-wider text-blue-900/40 mb-6 md:mb-8">
           Maitrise parfaite de vos outils de production
         </p>
         

@@ -73,7 +73,7 @@ export function Pricing() {
       <div className="container mx-auto px-4">
         
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl font-extrabold text-emerald-950 mb-4">
+          <h2 className="text-4xl font-extrabold text-blue-950 mb-4">
             Nos Forfaits <span className="text-rose-600">Cabinets</span>
           </h2>
           <p className="text-lg text-slate-600 font-medium">
@@ -83,7 +83,7 @@ export function Pricing() {
 
         {/* MOBILE VIEW */}
         <div className="md:hidden">
-          <div className="flex p-1 bg-emerald-50 rounded-xl mb-8 border border-emerald-100">
+          <div className="flex p-1 bg-blue-50 rounded-xl mb-8 border border-blue-100">
              <button onClick={() => setActiveTab('depannage')} className={cn("flex-1 py-2 text-xs font-bold rounded-lg transition-all", activeTab === 'depannage' ? "bg-white text-rose-600 shadow-sm" : "text-slate-500")}>549€</button>
              <button onClick={() => setActiveTab('bonplan')} className={cn("flex-1 py-2 text-xs font-bold rounded-lg transition-all", activeTab === 'bonplan' ? "bg-white text-rose-600 shadow-sm" : "text-slate-500")}>999€</button>
              <button onClick={() => setActiveTab('collaborateur')} className={cn("flex-1 py-2 text-xs font-bold rounded-lg transition-all", activeTab === 'collaborateur' ? "bg-white text-rose-600 shadow-sm" : "text-slate-500")}>1499€</button>
@@ -96,12 +96,12 @@ export function Pricing() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -10 }}
             >
-              <Card className={cn("border-2 shadow-xl", activeTab === 'bonplan' ? "border-rose-200" : "border-emerald-100")}>
+              <Card className={cn("border-2 shadow-xl", activeTab === 'bonplan' ? "border-rose-200" : "border-blue-100")}>
                 <CardHeader>
-                  <CardTitle className="text-2xl text-emerald-950">{plans[activeTab].title}</CardTitle>
+                  <CardTitle className="text-2xl text-blue-950">{plans[activeTab].title}</CardTitle>
                   <CardDescription className={cn("font-bold", activeTab === 'bonplan' ? "text-rose-600" : "text-slate-600")}>{plans[activeTab].volume}</CardDescription>
-                  <div className="text-3xl font-black mt-4 text-emerald-950">{plans[activeTab].price}<span className="text-sm font-medium text-slate-600">{plans[activeTab].unit}</span></div>
-                  <p className="text-xs text-emerald-400 mt-2 italic">{commonInfo}</p>
+                  <div className="text-3xl font-black mt-4 text-blue-950">{plans[activeTab].price}<span className="text-sm font-medium text-slate-600">{plans[activeTab].unit}</span></div>
+                  <p className="text-xs text-blue-400 mt-2 italic">{commonInfo}</p>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   {featuresList.map((f, i) => (
@@ -127,7 +127,7 @@ export function Pricing() {
             const plan = plans[key];
             return (
               <motion.div key={key} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-                <Card className={cn("h-full flex flex-col transition-all duration-300 hover:shadow-2xl border-emerald-100", plan.popular && "border-rose-300 ring-4 ring-rose-50 relative scale-105 z-10")}>
+                <Card className={cn("h-full flex flex-col transition-all duration-300 hover:shadow-2xl border-blue-100", plan.popular && "border-rose-300 ring-4 ring-rose-50 relative scale-105 z-10")}>
                   {plan.popular && (
                     <div className="absolute top-0 inset-x-0 h-1 bg-rose-400" />
                   )}
@@ -137,18 +137,18 @@ export function Pricing() {
                           Meilleur Choix
                        </div>
                     )}
-                    <CardTitle className="text-xl text-emerald-950">{plan.title}</CardTitle>
+                    <CardTitle className="text-xl text-blue-950">{plan.title}</CardTitle>
                     <div className={cn("font-black text-lg mt-1", plan.popular ? "text-rose-600" : "text-slate-600")}>{plan.volume}</div>
                     <div className="mt-6">
-                      <span className="text-4xl font-black text-emerald-950">{plan.price}</span>
+                      <span className="text-4xl font-black text-blue-950">{plan.price}</span>
                       <span className="text-slate-600 text-sm font-medium"> {plan.unit}</span>
                     </div>
-                    <p className="text-xs text-emerald-400 mt-2 italic">{commonInfo}</p>
+                    <p className="text-xs text-blue-400 mt-2 italic">{commonInfo}</p>
                   </CardHeader>
-                  <CardContent className="flex-1 space-y-3 pt-6 border-t border-emerald-50">
+                  <CardContent className="flex-1 space-y-3 pt-6 border-t border-blue-50">
                     {featuresList.map((f, i) => (
                       <div key={i} className="flex gap-3 text-xs text-slate-700 leading-tight">
-                        <div className={cn("h-4 w-4 rounded-full flex items-center justify-center shrink-0 mt-0.5", plan.popular ? "bg-rose-50 text-rose-600" : "bg-emerald-50 text-slate-600")}>
+                        <div className={cn("h-4 w-4 rounded-full flex items-center justify-center shrink-0 mt-0.5", plan.popular ? "bg-rose-50 text-rose-600" : "bg-blue-50 text-slate-600")}>
                           <Check size={10} />
                         </div>
                         <span>{f}</span>
@@ -167,7 +167,7 @@ export function Pricing() {
         </div>
 
         {/* Catch-up Section */}
-        <div className="mt-20 p-8 rounded-[2rem] bg-emerald-950 text-white flex flex-col md:flex-row items-center justify-between gap-8 border border-emerald-900 shadow-2xl overflow-hidden relative">
+        <div className="mt-20 p-8 rounded-[2rem] bg-blue-950 text-white flex flex-col md:flex-row items-center justify-between gap-8 border border-blue-900 shadow-2xl overflow-hidden relative">
            <div className="absolute top-0 right-0 w-64 h-64 bg-rose-500/10 blur-[80px] -z-0" />
            <div className="flex gap-6 items-center relative z-10">
               <div className="h-16 w-16 rounded-2xl bg-rose-600 flex items-center justify-center shadow-lg text-white"><Zap size={32} /></div>

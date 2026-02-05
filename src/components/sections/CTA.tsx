@@ -56,22 +56,22 @@ function CTAContent() {
         <h2 className="text-4xl font-bold tracking-tight text-white">
           Prêt à récupérer du temps ?
         </h2>
-        <p className="text-emerald-100/80 text-lg leading-relaxed">
+        <p className="text-blue-100/80 text-lg leading-relaxed">
           Discutons de vos besoins lors d&apos;un audit gratuit de 15 minutes.
           Sans engagement. Réponse sous 24h.
         </p>
         <div className="space-y-4 pt-4">
            <div className="flex items-center gap-4 group">
               <div className="h-10 w-10 rounded-full bg-rose-500 flex items-center justify-center text-white font-bold border border-rose-400 group-hover:scale-110 transition-transform">1</div>
-              <p className="text-emerald-50">Audit de vos volumes</p>
+              <p className="text-blue-50">Audit de vos volumes</p>
            </div>
            <div className="flex items-center gap-4 group">
               <div className="h-10 w-10 rounded-full bg-rose-500 flex items-center justify-center text-white font-bold border border-rose-400 group-hover:scale-110 transition-transform">2</div>
-              <p className="text-emerald-50">Proposition tarifaire sur mesure</p>
+              <p className="text-blue-50">Proposition tarifaire sur mesure</p>
            </div>
            <div className="flex items-center gap-4 group">
               <div className="h-10 w-10 rounded-full bg-rose-500 flex items-center justify-center text-white font-bold border border-rose-400 group-hover:scale-110 transition-transform">3</div>
-              <p className="text-emerald-50">Démarrage du pilote</p>
+              <p className="text-blue-50">Démarrage du pilote</p>
            </div>
         </div>
       </div>
@@ -98,29 +98,29 @@ function CTAContent() {
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
-                <label htmlFor="firstname" className="text-sm font-medium text-emerald-200 text-left block">Prénom</label>
-                <Input id="firstname" name="firstname" required placeholder="Jean" className="bg-emerald-950/50 border-emerald-800 text-white placeholder:text-emerald-700 focus:border-rose-500 focus:ring-rose-500" />
+                <label htmlFor="firstname" className="text-sm font-medium text-blue-200 text-left block">Prénom</label>
+                <Input id="firstname" name="firstname" required placeholder="Jean" className="bg-blue-950/50 border-blue-800 text-white placeholder:text-blue-700 focus:border-rose-500 focus:ring-rose-500" />
               </div>
               <div className="space-y-2">
-                <label htmlFor="lastname" className="text-sm font-medium text-emerald-200 text-left block">Nom</label>
-                <Input id="lastname" name="lastname" required placeholder="Dupont" className="bg-emerald-950/50 border-emerald-800 text-white placeholder:text-emerald-700 focus:border-rose-500 focus:ring-rose-500" />
+                <label htmlFor="lastname" className="text-sm font-medium text-blue-200 text-left block">Nom</label>
+                <Input id="lastname" name="lastname" required placeholder="Dupont" className="bg-blue-950/50 border-blue-800 text-white placeholder:text-blue-700 focus:border-rose-500 focus:ring-rose-500" />
               </div>
             </div>
             
             <div className="space-y-2">
-              <label htmlFor="email" className="text-sm font-medium text-emerald-200 text-left block">Email pro</label>
-              <Input id="email" name="email" type="email" required placeholder="jean@cabinet-dupont.fr" className="bg-emerald-950/50 border-emerald-800 text-white placeholder:text-emerald-700 focus:border-rose-500 focus:ring-rose-500" />
+              <label htmlFor="email" className="text-sm font-medium text-blue-200 text-left block">Email pro</label>
+              <Input id="email" name="email" type="email" required placeholder="jean@cabinet-dupont.fr" className="bg-blue-950/50 border-blue-800 text-white placeholder:text-blue-700 focus:border-rose-500 focus:ring-rose-500" />
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="message" className="text-sm font-medium text-emerald-200 text-left block">Message (optionnel)</label>
+              <label htmlFor="message" className="text-sm font-medium text-blue-200 text-left block">Message (optionnel)</label>
               <Textarea 
                 id="message" 
                 name="message" 
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Je souhaite externaliser la paie..." 
-                className="bg-emerald-950/50 border-emerald-800 text-white placeholder:text-emerald-700 focus:border-rose-500 focus:ring-rose-500 min-h-[100px]" 
+                className="bg-blue-950/50 border-blue-800 text-white placeholder:text-blue-700 focus:border-rose-500 focus:ring-rose-500 min-h-[100px]" 
               />
             </div>
 
@@ -140,7 +140,7 @@ function CTAContent() {
                 "Envoyer ma demande"
               )}
             </Button>
-            <p className="text-xs text-center text-emerald-500 mt-4">
+            <p className="text-xs text-center text-blue-500 mt-4">
               Vos données restent confidentielles.
             </p>
           </form>
@@ -158,10 +158,10 @@ function CTASuspense() {
 
 export function CTA() {
   return (
-    <section id="contact" className="py-24 bg-emerald-950 text-white overflow-hidden relative">
+    <section id="contact" className="py-24 bg-blue-950 text-white overflow-hidden relative">
        {/* Background Decoration */}
        <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-20 pointer-events-none">
-          <div className="absolute -top-1/2 -right-1/2 w-[1000px] h-[1000px] rounded-full bg-emerald-600 blur-[120px]" />
+          <div className="absolute -top-1/2 -right-1/2 w-[1000px] h-[1000px] rounded-full bg-blue-600 blur-[120px]" />
           <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-rose-500 blur-[100px]" />
        </div>
 

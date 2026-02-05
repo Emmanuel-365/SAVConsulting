@@ -24,7 +24,7 @@ export function FAQ() {
           <Accordion type="single" collapsible className="w-full">
             
             <AccordionItem value="item-1">
-              <AccordionTrigger className="text-lg text-slate-900 hover:text-emerald-600 hover:no-underline py-6">
+              <AccordionTrigger className="text-lg text-slate-900 hover:text-blue-600 hover:no-underline py-6">
                 Où sont stockées les données de mes clients ?
               </AccordionTrigger>
               <AccordionContent className="text-slate-500 leading-relaxed text-base pb-6">
@@ -33,7 +33,7 @@ export function FAQ() {
             </AccordionItem>
 
             <AccordionItem value="item-2">
-              <AccordionTrigger className="text-lg text-slate-900 hover:text-emerald-600 hover:no-underline py-6">
+              <AccordionTrigger className="text-lg text-slate-900 hover:text-blue-600 hover:no-underline py-6">
                 Quels logiciels maîtrisez-vous ?
               </AccordionTrigger>
               <AccordionContent className="text-slate-500 leading-relaxed text-base pb-6">
@@ -42,7 +42,7 @@ export function FAQ() {
             </AccordionItem>
 
             <AccordionItem value="item-3">
-              <AccordionTrigger className="text-lg text-slate-900 hover:text-emerald-600 hover:no-underline py-6">
+              <AccordionTrigger className="text-lg text-slate-900 hover:text-blue-600 hover:no-underline py-6">
                 Puis-je tester avant de m&apos;engager ?
               </AccordionTrigger>
               <AccordionContent className="text-slate-500 leading-relaxed text-base pb-6">
@@ -51,7 +51,7 @@ export function FAQ() {
             </AccordionItem>
 
             <AccordionItem value="item-4">
-              <AccordionTrigger className="text-lg text-slate-900 hover:text-emerald-600 hover:no-underline py-6">
+              <AccordionTrigger className="text-lg text-slate-900 hover:text-blue-600 hover:no-underline py-6">
                 Comment gérez-vous la confidentialité ?
               </AccordionTrigger>
               <AccordionContent className="text-slate-500 leading-relaxed text-base pb-6">
@@ -60,7 +60,7 @@ export function FAQ() {
             </AccordionItem>
             
             <AccordionItem value="item-5" className="border-b-0">
-              <AccordionTrigger className="text-lg text-slate-900 hover:text-emerald-600 hover:no-underline py-6">
+              <AccordionTrigger className="text-lg text-slate-900 hover:text-blue-600 hover:no-underline py-6">
                 Et si je veux arrêter ?
               </AccordionTrigger>
               <AccordionContent className="text-slate-500 leading-relaxed text-base pb-6">

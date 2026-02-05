@@ -46,11 +46,11 @@ export function Navbar() {
   return (
     <>
       <header className={cn("fixed top-0 left-0 right-0 z-[100] transition-all duration-700 px-4", isScrolled ? "pt-4" : "pt-6")}>
-        <nav className={cn("container mx-auto transition-all duration-700 cubic-bezier(0.4, 0, 0.2, 1)", isScrolled ? "max-w-5xl bg-emerald-950/80 backdrop-blur-xl border border-white/10 shadow-2xl rounded-full py-2 px-6" : "max-w-7xl bg-transparent py-2 px-0")}>
+        <nav className={cn("container mx-auto transition-all duration-700 cubic-bezier(0.4, 0, 0.2, 1)", isScrolled ? "max-w-5xl bg-blue-950/80 backdrop-blur-xl border border-white/10 shadow-2xl rounded-full py-2 px-6" : "max-w-7xl bg-transparent py-2 px-0")}>
           <div className="flex items-center justify-between">
             {/* LOGO */}
             <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight text-white group shrink-0" onClick={() => setIsOpen(false)}>
-              <div className="bg-emerald-600 text-white p-1.5 rounded-xl group-hover:rotate-12 transition-transform duration-500 shadow-lg shadow-emerald-500/20">
+              <div className="bg-blue-600 text-white p-1.5 rounded-xl group-hover:rotate-12 transition-transform duration-500 shadow-lg shadow-blue-500/20">
                 <BarChart3 className="w-5 h-5" />
               </div>
               <span className="hidden sm:inline italic">SAV<span className="text-white opacity-80">Consulting</span></span>
@@ -65,7 +65,7 @@ export function Navbar() {
                     <NavigationMenuTrigger className={cn("bg-transparent font-semibold transition-colors h-10 px-4 rounded-full hover:bg-white/10 text-white")}>
                       Expertise
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent className="rounded-3xl border-white/10 shadow-2xl bg-emerald-950/95 backdrop-blur-2xl">
+                    <NavigationMenuContent className="rounded-3xl border-white/10 shadow-2xl bg-blue-950/95 backdrop-blur-2xl">
                       <ul className="grid w-[400px] gap-2 p-6 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                         {expertiseLinks.map((link) => (
                           <ListItem key={link.title} title={link.title} href={link.href} icon={link.icon}>
@@ -80,7 +80,7 @@ export function Navbar() {
                     <NavigationMenuTrigger className={cn("bg-transparent font-semibold transition-colors h-10 px-4 rounded-full hover:bg-white/10 text-white")}>
                       Société
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent className="rounded-3xl border-white/10 shadow-2xl bg-emerald-950/95 backdrop-blur-2xl">
+                    <NavigationMenuContent className="rounded-3xl border-white/10 shadow-2xl bg-blue-950/95 backdrop-blur-2xl">
                       <ul className="grid w-[400px] gap-2 p-6 md:w-[500px] md:grid-cols-2">
                         {companyLinks.map((link) => (
                           <ListItem key={link.title} title={link.title} href={link.href} icon={link.icon}>
@@ -142,7 +142,7 @@ export function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-[90] bg-emerald-950 md:hidden overflow-y-auto pt-28 pb-12 px-8"
+            className="fixed inset-0 z-[90] bg-blue-950 md:hidden overflow-y-auto pt-28 pb-12 px-8"
           >
             <div className="flex flex-col gap-10">
               
@@ -176,7 +176,7 @@ export function Navbar() {
 
               <div className="pt-10 border-t border-white/10 flex flex-col gap-4">
                 <Button size="lg" className="rounded-full bg-rose-600 hover:bg-rose-700 h-16 text-xl shadow-xl shadow-rose-900/20 font-bold" asChild>
-                  <Link href="/contact?subject=audit" onClick={() => setIsOpen(false)}>Réserver un Audit</Link>
+                  <Link href="/contact?subject=audit" onClick={() => setIsOpen(false)}>Réserver un pack</Link>
                 </Button>
                 <div className="flex items-center justify-center gap-2 text-white/40">
                    <Mail size={14} />

@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-emerald-950 pt-20">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-blue-950 pt-20">
       
       {/* 1. IMMERSIVE BACKGROUND IMAGE */}
       <div className="absolute inset-0 z-0">
@@ -20,13 +20,13 @@ export function Hero() {
           className="object-cover opacity-30 grayscale"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-950 via-emerald-950/60 to-transparent z-10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-emerald-950 via-transparent to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-950/60 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-blue-950 via-transparent to-transparent z-10" />
       </div>
 
       {/* 2. DYNAMIC AURORA */}
       <div className="absolute inset-0 w-full h-full overflow-hidden z-20 pointer-events-none">
-        <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-emerald-500/20 rounded-full blur-[120px] animate-blob" />
+        <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[120px] animate-blob" />
         <div className="absolute bottom-[10%] right-[10%] w-[400px] h-[400px] bg-rose-400/10 rounded-full blur-[100px] animate-blob animation-delay-2000" />
       </div>
 
@@ -40,7 +40,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-white/5 backdrop-blur-md text-rose-300 text-xs md:text-sm font-medium"
+              className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/30 bg-white/5 backdrop-blur-md text-rose-300 text-xs md:text-sm font-medium"
             >
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
@@ -57,7 +57,7 @@ export function Hero() {
             >
               Externalisez la <br />
               production, <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-rose-300">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-rose-300">
                 vendez du conseil.
               </span>
             </motion.h1>
@@ -66,7 +66,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-lg md:text-2xl text-emerald-100/80 max-w-xl leading-relaxed"
+              className="text-lg md:text-2xl text-blue-100/80 max-w-xl leading-relaxed"
             >
               Gagnez du temps, économisez en masse salariale et préservez votre relation client. La solution marque blanche pour cabinets modernes.
             </motion.p>
@@ -79,7 +79,7 @@ export function Hero() {
             >
               <Button size="lg" className="h-14 md:h-16 px-10 text-lg bg-rose-600 hover:bg-rose-700 text-white shadow-2xl shadow-rose-900/40 rounded-full font-black transition-all hover:scale-105" asChild>
                 <a href="?subject=audit#contact">
-                  Réserver un Audit <ArrowRight className="ml-2 h-6 w-6" />
+                  Réserver un pack <ArrowRight className="ml-2 h-6 w-6" />
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="h-14 md:h-16 px-10 text-lg border-rose-500/30 text-rose-300 hover:bg-rose-600 hover:text-white rounded-full font-bold backdrop-blur-sm transition-all" asChild>
@@ -95,7 +95,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="hidden lg:block relative"
           >
-            <div className="p-10 rounded-[3rem] bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl shadow-emerald-950/50">
+            <div className="p-10 rounded-[3rem] bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl shadow-blue-950/50">
               <div className="flex items-center gap-4 mb-8">
                 <div className="h-12 w-12 rounded-2xl bg-rose-500/20 flex items-center justify-center text-rose-400 border border-rose-400/30 shadow-lg shadow-rose-500/20">
                   <CheckCircle2 size={24} />
@@ -103,7 +103,7 @@ export function Hero() {
                 <h2 className="text-2xl font-black text-white uppercase tracking-wider">Notre Mission</h2>
               </div>
               
-              <div className="space-y-6 text-emerald-50/70 text-lg leading-relaxed">
+              <div className="space-y-6 text-blue-50/70 text-lg leading-relaxed">
                 <p>
                   Ce projet est né d’un constat simple :​
                   Les cabinets d’expertise comptable passent encore trop de temps sur des tâches
@@ -145,7 +145,7 @@ sur ce qui fait réellement leur valeur.
           className="lg:hidden mt-16 p-8 rounded-[2.5rem] bg-white/5 border border-white/10 backdrop-blur-xl"
         >
            <h2 className="text-2xl font-black text-white mb-6">À propos de notre mission.</h2>
-           <p className="text-emerald-50/70 text-base leading-relaxed">
+           <p className="text-blue-50/70 text-base leading-relaxed">
              Ce projet est né d&apos;un constat simple : Libérer les cabinets des tâches comptables récurrentes pour leur permettre de se concentrer sur le conseil et la relation client.
            </p>
         </motion.div>

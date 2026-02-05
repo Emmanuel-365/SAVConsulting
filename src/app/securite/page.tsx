@@ -51,8 +51,8 @@ export default function SecurityPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             {protocols.map((p, i) => (
-              <div key={i} className="p-8 rounded-3xl bg-emerald-50/50 border border-emerald-100 group hover:bg-white hover:shadow-xl hover:border-emerald-200 transition-all text-left">
-                <div className="h-12 w-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center mb-6 shadow-lg shadow-emerald-200">
+              <div key={i} className="p-8 rounded-3xl bg-blue-50/50 border border-blue-100 group hover:bg-white hover:shadow-xl hover:border-blue-200 transition-all text-left">
+                <div className="h-12 w-12 rounded-xl bg-blue-600 text-white flex items-center justify-center mb-6 shadow-lg shadow-blue-200">
                   <p.icon size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3">{p.title}</h3>
@@ -61,13 +61,13 @@ export default function SecurityPage() {
             ))}
           </div>
 
-          <div className="bg-emerald-950 rounded-3xl p-10 text-white flex flex-col md:flex-row gap-8 items-center border border-emerald-900 shadow-2xl">
-             <div className="h-20 w-20 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0 border border-emerald-500/30">
-                <ShieldCheck size={40} className="text-emerald-400" />
+          <div className="bg-blue-950 rounded-3xl p-10 text-white flex flex-col md:flex-row gap-8 items-center border border-blue-900 shadow-2xl">
+             <div className="h-20 w-20 rounded-full bg-blue-500/20 flex items-center justify-center shrink-0 border border-blue-500/30">
+                <ShieldCheck size={40} className="text-blue-400" />
              </div>
              <div className="text-left">
                 <h4 className="text-2xl font-bold mb-2">Audit de Sécurité</h4>
-                <p className="text-emerald-100/60 leading-relaxed">
+                <p className="text-blue-100/60 leading-relaxed">
                   Nous sommes ouverts à toute demande d&apos;audit technique de la part de vos services informatiques pour valider nos protocoles de connexion.
                 </p>
              </div>

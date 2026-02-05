@@ -8,8 +8,8 @@ const features = [
     icon: Zap,
     title: "Réactivité < 2h",
     desc: "Fini les plateformes anonymes. Vous avez un interlocuteur unique joignable sur WhatsApp/Teams. Réponse garantie sous 2 heures ouvrées.",
-    color: "bg-emerald-50 text-slate-600",
-    border: "border-emerald-100"
+    color: "bg-blue-50 text-slate-600",
+    border: "border-blue-100"
   },
   {
     icon: ShieldCheck,
@@ -22,8 +22,8 @@ const features = [
     icon: Fingerprint,
     title: "Sur-mesure",
     desc: "Nous ne sommes pas une usine. Nous nous adaptons à VOTRE plan comptable et VOS méthodes de classement. Comme un collaborateur interne.",
-    color: "bg-emerald-50 text-slate-600",
-    border: "border-emerald-100"
+    color: "bg-blue-50 text-slate-600",
+    border: "border-blue-100"
   }
 ];
 
@@ -37,13 +37,13 @@ export function WhyUs() {
         
         {/* Header Mobile Only (Pour guider) */}
         <div className="md:hidden text-center mb-8">
-           <h2 className="text-2xl font-bold text-emerald-950">Pourquoi nous choisir ?</h2>
+           <h2 className="text-2xl font-bold text-blue-950">Pourquoi nous choisir ?</h2>
            <p className="text-sm text-slate-500 mt-2 font-medium">Spécialisé cabinets de 0 à 50 collaborateurs.</p>
         </div>
 
         {/* Desktop Header Added for completeness */}
         <div className="hidden md:block text-center mb-20 max-w-2xl mx-auto">
-           <h2 className="text-4xl font-black text-emerald-950 mb-6">Un partenaire <span className="text-rose-600 italic">discret</span>, fiable et sécurisé.</h2>
+           <h2 className="text-4xl font-black text-blue-950 mb-6">Un partenaire <span className="text-rose-600 italic">discret</span>, fiable et sécurisé.</h2>
            <p className="text-lg text-slate-600 font-medium">Une solution pensée pour les cabinets de 0 à 50 collaborateurs en pleine croissance.</p>
         </div>
 
@@ -57,12 +57,12 @@ export function WhyUs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`snap-center shrink-0 w-[85vw] md:w-auto p-8 md:p-10 rounded-[2.5rem] md:rounded-3xl border-2 ${feature.border} bg-white shadow-xl shadow-emerald-900/5 flex flex-col items-center text-center hover:scale-105 transition-transform duration-500`}
+              className={`snap-center shrink-0 w-[85vw] md:w-auto p-8 md:p-10 rounded-[2.5rem] md:rounded-3xl border-2 ${feature.border} bg-white shadow-xl shadow-blue-900/5 flex flex-col items-center text-center hover:scale-105 transition-transform duration-500`}
             >
               <div className={`inline-flex items-center justify-center p-4 rounded-2xl mb-6 ${feature.color} shadow-inner`}>
                 <feature.icon className="h-8 w-8" />
               </div>
-              <h3 className="text-2xl font-black mb-4 text-emerald-950">{feature.title}</h3>
+              <h3 className="text-2xl font-black mb-4 text-blue-950">{feature.title}</h3>
               <p className="text-slate-600 leading-relaxed text-sm md:text-base font-medium">
                 {feature.desc}
               </p>
