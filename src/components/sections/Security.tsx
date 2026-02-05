@@ -51,7 +51,7 @@ export function Security() {
               </div>
               <h2 className="text-4xl md:text-6xl font-extrabold mb-6 leading-[1.1]">
                 Votre confiance, <br/>
-                <span className="text-emerald-500 italic">notre forteresse.</span>
+                <span className="text-slate-500 italic">notre forteresse.</span>
               </h2>
               <p className="text-base md:text-xl text-emerald-100/60 leading-relaxed max-w-md mx-auto lg:mx-0 mb-12">
                 Nous avons bâti une infrastructure étanche pour garantir la confidentialité totale de vos flux.

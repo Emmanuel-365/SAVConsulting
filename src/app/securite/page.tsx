@@ -42,21 +42,21 @@ export default function SecurityPage() {
       <section className="py-24 container mx-auto px-4">
         <div className="max-w-3xl mx-auto space-y-16">
           
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-emerald-900">Un protocole étanche</h2>
-            <p className="text-lg text-emerald-600 leading-relaxed">
+          <div className="space-y-6 text-left">
+            <h2 className="text-3xl font-bold text-slate-900">Un protocole étanche</h2>
+            <p className="text-lg text-slate-600 leading-relaxed">
               Pour SAV Consulting, la sécurité est la base de notre relation de confiance. Nous avons mis en place une infrastructure technique conçue pour garantir une étanchéité totale.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {protocols.map((p, i) => (
-              <div key={i} className="p-8 rounded-3xl bg-emerald-50/50 border border-emerald-100 group hover:bg-white hover:shadow-xl hover:border-emerald-200 transition-all">
+              <div key={i} className="p-8 rounded-3xl bg-emerald-50/50 border border-emerald-100 group hover:bg-white hover:shadow-xl hover:border-emerald-200 transition-all text-left">
                 <div className="h-12 w-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center mb-6 shadow-lg shadow-emerald-200">
                   <p.icon size={24} />
                 </div>
-                <h3 className="text-xl font-bold text-emerald-900 mb-3">{p.title}</h3>
-                <p className="text-emerald-500 text-sm leading-relaxed">{p.desc}</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">{p.title}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
@@ -65,7 +65,7 @@ export default function SecurityPage() {
              <div className="h-20 w-20 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0 border border-emerald-500/30">
                 <ShieldCheck size={40} className="text-emerald-400" />
              </div>
-             <div>
+             <div className="text-left">
                 <h4 className="text-2xl font-bold mb-2">Audit de Sécurité</h4>
                 <p className="text-emerald-100/60 leading-relaxed">
                   Nous sommes ouverts à toute demande d&apos;audit technique de la part de vos services informatiques pour valider nos protocoles de connexion.

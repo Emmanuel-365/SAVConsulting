@@ -5,7 +5,7 @@ export default function LegalPage() {
     <main className="min-h-screen bg-white">
       <PageHero title="Mentions Légales" subtitle="Informations juridiques concernant SAV Consulting." />
       <section className="py-20 container mx-auto px-4 max-w-4xl prose prose-slate">
-        <div className="space-y-12 text-emerald-600">
+        <div className="space-y-12 text-slate-600">
           <div>
             <h2 className="text-2xl font-bold text-emerald-900 mb-4">1. Éditeur du site</h2>
             <p>Le site est édité par SAV Consulting.</p>

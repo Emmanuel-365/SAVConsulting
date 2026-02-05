@@ -5,7 +5,7 @@ export default function PrivacyPage() {
     <main className="min-h-screen bg-white">
       <PageHero title="Politique de Confidentialité" subtitle="Comment nous protégeons vos données et celles de vos clients." />
       <section className="py-20 container mx-auto px-4 max-w-4xl">
-        <div className="space-y-12 text-emerald-600 leading-relaxed">
+        <div className="space-y-12 text-slate-600 leading-relaxed">
           <p>Chez SAV Consulting, la protection des données est fondamentale. Cette politique détaille nos engagements conformément au RGPD.</p>
           
           <div>

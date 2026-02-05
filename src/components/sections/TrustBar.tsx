@@ -4,7 +4,6 @@ export function TrustBar() {
   const tools = [
     { name: "Sage", logo: "/logos/sage.svg" },
     { name: "Cegid", logo: "/logos/cegid.svg" },
-    { name: "Cegid Loop", logo: "/logos/cegid.svg" }, // Même logo que Cegid
     { name: "ACD Groupe", logo: "/logos/acd.svg" },
     { name: "Silae", logo: "/logos/silae.svg" },
     { name: "Pennylane", logo: "/logos/pennylane.svg" },

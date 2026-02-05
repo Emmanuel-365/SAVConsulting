@@ -13,7 +13,7 @@ const workflows = [
   {
     icon: Calendar,
     title: "Collecte des variables",
-    desc: "Nous récupérons vos éléments de paie via vos outils ou fichiers d'import."
+    desc: "Nous récupérons vos éléments de paie via vos outils ou fichiers d&apos;import."
   },
   {
     icon: FileText,
@@ -43,20 +43,20 @@ export default function PayrollServicePage() {
 
       <section className="py-24 container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">Un pôle social dédié à votre service</h2>
-          <p className="text-lg text-emerald-600 leading-relaxed">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Un pôle social dédié à votre service</h2>
+          <p className="text-lg text-slate-600 leading-relaxed">
             La gestion de la paie demande une vigilance constante. SAV Consulting met à votre disposition des experts formés aux spécificités des conventions collectives françaises.
           </p>
         </div>
 
         <div className="grid md:grid-cols-4 gap-8">
           {workflows.map((item, i) => (
-            <div key={i} className="relative p-8 rounded-3xl bg-emerald-50 border border-emerald-100 hover:shadow-xl hover:bg-white transition-all group">
+            <div key={i} className="relative p-8 rounded-3xl bg-emerald-50 border border-emerald-100 hover:shadow-xl hover:bg-white transition-all group text-left">
               <div className="h-12 w-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center mb-6 shadow-lg shadow-emerald-200">
                 <item.icon size={24} />
               </div>
-              <h3 className="font-bold text-lg text-emerald-900 mb-3">{item.title}</h3>
-              <p className="text-sm text-emerald-500 leading-relaxed">{item.desc}</p>
+              <h3 className="font-bold text-lg text-slate-900 mb-3">{item.title}</h3>
+              <p className="text-sm text-slate-500 leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -65,15 +65,15 @@ export default function PayrollServicePage() {
       <section className="py-24 bg-emerald-950 text-white overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
+            <div className="text-left">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-rose-300 text-sm font-medium mb-6">
                 Maîtrise Silae
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">L&apos;expertise au cœur de vos outils.</h2>
-              <p className="text-emerald-100/60 text-lg leading-relaxed mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white text-left">L&apos;expertise au cœur de vos outils.</h2>
+              <p className="text-emerald-100/60 text-lg leading-relaxed mb-8 text-left">
                 Notre équipe est nativement formée sur <strong>Silae</strong>, le standard du marché français.
               </p>
-              <ul className="space-y-4 mb-10">
+              <ul className="space-y-4 mb-10 text-left">
                 <li className="flex items-center gap-3">
                   <div className="h-2 w-2 rounded-full bg-rose-400" />
                   <span className="text-emerald-100">Veille conventionnelle permanente</span>
@@ -93,10 +93,8 @@ export default function PayrollServicePage() {
             </div>
             <div className="relative">
                <div className="bg-white/5 rounded-3xl p-8 border border-white/10 backdrop-blur-sm">
-                  <div className="aspect-video bg-emerald-900/50 rounded-xl overflow-hidden relative border border-emerald-800">
-                     <div className="absolute inset-0 flex items-center justify-center text-emerald-500 italic">
-                        Expertise Silae Certifiée
-                     </div>
+                  <div className="aspect-video bg-emerald-900/50 rounded-xl overflow-hidden relative border border-emerald-800 flex items-center justify-center">
+                     <span className="text-emerald-500 italic">Expertise Silae Certifiée</span>
                   </div>
                </div>
             </div>

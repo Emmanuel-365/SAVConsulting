@@ -33,7 +33,7 @@ const sectors = [
 
 export function Expertise() {
   return (
-    <section className="py-20 md:py-32 bg-white overflow-hidden">
+    <section className="py-20 md:py-32 bg-rose-50/20 overflow-hidden border-y border-rose-100">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 md:mb-20 gap-6 text-center md:text-left">
           <div className="max-w-2xl">
@@ -43,13 +43,13 @@ export function Expertise() {
               viewport={{ once: true }}
               className="text-3xl md:text-5xl font-extrabold text-emerald-950 mb-4 md:mb-6"
             >
-              Une expertise métier<br/> <span className="text-emerald-600">selon votre secteur.</span>
+              Une expertise métier<br/> <span className="text-slate-600">selon votre secteur.</span>
             </motion.h2>
-            <p className="text-base md:text-lg text-emerald-800/70">
+            <p className="text-base md:text-lg text-slate-600">
               Nous comprenons les enjeux spécifiques de vos clients pour une production pertinente dès le premier jour.
             </p>
           </div>
-          <div className="md:hidden text-rose-400 font-semibold text-sm animate-pulse">
+          <div className="md:hidden text-rose-500 font-bold text-sm animate-pulse">
             Glissez pour explorer 👉
           </div>
         </div>
@@ -63,13 +63,13 @@ export function Expertise() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="snap-center shrink-0 w-[80vw] md:w-auto p-8 rounded-3xl border border-emerald-100 bg-emerald-50/20 hover:bg-white hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-500/5 transition-all group flex flex-col items-center text-center md:items-start md:text-left"
+              className="snap-center shrink-0 w-[80vw] md:w-auto p-8 rounded-3xl border border-rose-100 bg-white hover:border-rose-300 hover:shadow-xl hover:shadow-rose-500/5 transition-all group flex flex-col items-center text-center md:items-start md:text-left"
             >
-              <div className="h-14 w-14 rounded-2xl bg-white border border-emerald-100 text-emerald-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-sm">
+              <div className="h-14 w-14 rounded-2xl bg-rose-50 border border-rose-100 text-rose-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-sm group-hover:bg-rose-600 group-hover:text-white">
                 <sector.icon size={28} />
               </div>
               <h3 className="text-xl font-bold mb-3 text-emerald-950">{sector.title}</h3>
-              <p className="text-emerald-800/60 text-sm leading-relaxed">
+              <p className="text-slate-500 text-sm leading-relaxed">
                 {sector.desc}
               </p>
             </motion.div>

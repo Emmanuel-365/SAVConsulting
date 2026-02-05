@@ -50,8 +50,8 @@ export function Method() {
                 Une intégration fluide,<br/> 
                 <span className="text-emerald-600">sans friction.</span>
               </h2>
-              <p className="text-base md:text-lg text-emerald-800/60 leading-relaxed">
-                Notre process est rodé pour s'insérer dans votre cabinet sans perturber vos habitudes.
+              <p className="text-base md:text-lg text-slate-600 leading-relaxed">
+                Notre process est rodé pour s&apos;insérer dans votre cabinet sans perturber vos habitudes.
               </p>
             </motion.div>
 
@@ -93,7 +93,7 @@ export function Method() {
                     <h3 className="font-bold text-lg md:text-xl text-emerald-950 group-hover:text-emerald-600 transition-colors">
                       {step.title}
                     </h3>
-                    <p className="text-emerald-800/60 leading-relaxed mt-2 text-sm md:text-base">
+                    <p className="text-slate-500 leading-relaxed mt-2 text-sm md:text-base">
                       {step.desc}
                     </p>
                   </div>
@@ -125,7 +125,7 @@ export function Method() {
                      <div className="h-10 w-10 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-600 font-bold shrink-0">JD</div>
                      <div>
                         <p className="text-sm font-medium text-emerald-900 italic leading-relaxed">
-                          "L'équipe a su s'adapter à notre process sur Silae en moins d'une semaine. Un gain de temps immédiat."
+                          &quot;L&apos;équipe a su s&apos;adapter à notre process sur Silae en moins d&apos;une semaine. Un gain de temps immédiat.&quot;
                         </p>
                         <div className="mt-3 flex items-center gap-2">
                            <div className="flex text-rose-400">

@@ -14,6 +14,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
+interface PricingPlan {
+  title: string;
+  desc: string;
+  price: string;
+  unit: string;
+  volume: string;
+  cta: string;
+  popular?: boolean;
+}
+
 export function Pricing() {
   const [activeTab, setActiveTab] = useState<'depannage' | 'bonplan' | 'collaborateur'>('depannage');
 
@@ -28,7 +38,7 @@ export function Pricing() {
     "Révision des comptes, dossier de révision et note de synthèse"
   ];
 
-  const plans = {
+  const plans: Record<'depannage' | 'bonplan' | 'collaborateur', PricingPlan> = {
     depannage: {
       title: "Pack Dépannage",
       desc: "Idéal pour soulager ponctuellement.",
@@ -63,20 +73,20 @@ export function Pricing() {
       <div className="container mx-auto px-4">
         
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl font-extrabold text-emerald-900 mb-4">
-            Nos Forfaits <span className="text-emerald-600">Cabinets</span>
+          <h2 className="text-4xl font-extrabold text-emerald-950 mb-4">
+            Nos Forfaits <span className="text-rose-600">Cabinets</span>
           </h2>
-          <p className="text-lg text-emerald-600">
+          <p className="text-lg text-slate-600 font-medium">
             Des packs clairs pour une visibilité totale sur vos coûts de production.
           </p>
         </div>
 
         {/* MOBILE VIEW */}
         <div className="md:hidden">
-          <div className="flex p-1 bg-emerald-100 rounded-xl mb-8">
-             <button onClick={() => setActiveTab('depannage')} className={cn("flex-1 py-2 text-xs font-bold rounded-lg transition-all", activeTab === 'depannage' ? "bg-white text-emerald-600 shadow-sm" : "text-emerald-500")}>549€</button>
-             <button onClick={() => setActiveTab('bonplan')} className={cn("flex-1 py-2 text-xs font-bold rounded-lg transition-all", activeTab === 'bonplan' ? "bg-white text-emerald-600 shadow-sm" : "text-emerald-500")}>999€</button>
-             <button onClick={() => setActiveTab('collaborateur')} className={cn("flex-1 py-2 text-xs font-bold rounded-lg transition-all", activeTab === 'collaborateur' ? "bg-white text-emerald-600 shadow-sm" : "text-emerald-500")}>1499€</button>
+          <div className="flex p-1 bg-emerald-50 rounded-xl mb-8 border border-emerald-100">
+             <button onClick={() => setActiveTab('depannage')} className={cn("flex-1 py-2 text-xs font-bold rounded-lg transition-all", activeTab === 'depannage' ? "bg-white text-rose-600 shadow-sm" : "text-slate-500")}>549€</button>
+             <button onClick={() => setActiveTab('bonplan')} className={cn("flex-1 py-2 text-xs font-bold rounded-lg transition-all", activeTab === 'bonplan' ? "bg-white text-rose-600 shadow-sm" : "text-slate-500")}>999€</button>
+             <button onClick={() => setActiveTab('collaborateur')} className={cn("flex-1 py-2 text-xs font-bold rounded-lg transition-all", activeTab === 'collaborateur' ? "bg-white text-rose-600 shadow-sm" : "text-slate-500")}>1499€</button>
           </div>
 
           <AnimatePresence mode="wait">
@@ -86,23 +96,23 @@ export function Pricing() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -10 }}
             >
-              <Card className="border-2 border-emerald-100 shadow-xl">
+              <Card className={cn("border-2 shadow-xl", activeTab === 'bonplan' ? "border-rose-200" : "border-emerald-100")}>
                 <CardHeader>
-                  <CardTitle className="text-2xl">{plans[activeTab].title}</CardTitle>
-                  <CardDescription className="text-emerald-600 font-bold">{plans[activeTab].volume}</CardDescription>
-                  <div className="text-3xl font-black mt-4">{plans[activeTab].price}<span className="text-sm font-medium text-emerald-500">{plans[activeTab].unit}</span></div>
+                  <CardTitle className="text-2xl text-emerald-950">{plans[activeTab].title}</CardTitle>
+                  <CardDescription className={cn("font-bold", activeTab === 'bonplan' ? "text-rose-600" : "text-slate-600")}>{plans[activeTab].volume}</CardDescription>
+                  <div className="text-3xl font-black mt-4 text-emerald-950">{plans[activeTab].price}<span className="text-sm font-medium text-slate-600">{plans[activeTab].unit}</span></div>
                   <p className="text-xs text-emerald-400 mt-2 italic">{commonInfo}</p>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   {featuresList.map((f, i) => (
-                    <div key={i} className="flex gap-2 text-sm text-emerald-600">
-                      <Check size={16} className="text-emerald-500 shrink-0 mt-0.5" />
+                    <div key={i} className="flex gap-2 text-sm text-slate-700">
+                      <Check size={16} className={cn("shrink-0 mt-0.5", activeTab === 'bonplan' ? "text-rose-500" : "text-slate-500")} />
                       <span>{f}</span>
                     </div>
                   ))}
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full bg-emerald-600" asChild>
+                  <Button className={cn("w-full font-bold", activeTab === 'bonplan' ? "bg-rose-600 hover:bg-rose-700 shadow-lg shadow-rose-200" : "bg-rose-600 hover:bg-rose-700 text-white")} asChild>
                     <a href={`?subject=${activeTab}#contact`}>{plans[activeTab].cta}</a>
                   </Button>
                 </CardFooter>
@@ -117,7 +127,7 @@ export function Pricing() {
             const plan = plans[key];
             return (
               <motion.div key={key} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-                <Card className={cn("h-full flex flex-col transition-all duration-300 hover:shadow-2xl border-emerald-200", plan.popular && "border-rose-300 ring-4 ring-rose-50 relative scale-105 z-10")}>
+                <Card className={cn("h-full flex flex-col transition-all duration-300 hover:shadow-2xl border-emerald-100", plan.popular && "border-rose-300 ring-4 ring-rose-50 relative scale-105 z-10")}>
                   {plan.popular && (
                     <div className="absolute top-0 inset-x-0 h-1 bg-rose-400" />
                   )}
@@ -127,24 +137,26 @@ export function Pricing() {
                           Meilleur Choix
                        </div>
                     )}
-                    <CardTitle className="text-xl">{plan.title}</CardTitle>
-                    <div className="text-emerald-600 font-black text-lg mt-1">{plan.volume}</div>
+                    <CardTitle className="text-xl text-emerald-950">{plan.title}</CardTitle>
+                    <div className={cn("font-black text-lg mt-1", plan.popular ? "text-rose-600" : "text-slate-600")}>{plan.volume}</div>
                     <div className="mt-6">
-                      <span className="text-4xl font-black">{plan.price}</span>
-                      <span className="text-emerald-500 text-sm font-medium"> {plan.unit}</span>
+                      <span className="text-4xl font-black text-emerald-950">{plan.price}</span>
+                      <span className="text-slate-600 text-sm font-medium"> {plan.unit}</span>
                     </div>
                     <p className="text-xs text-emerald-400 mt-2 italic">{commonInfo}</p>
                   </CardHeader>
                   <CardContent className="flex-1 space-y-3 pt-6 border-t border-emerald-50">
                     {featuresList.map((f, i) => (
-                      <div key={i} className="flex gap-3 text-xs text-emerald-600 leading-tight">
-                        <div className="h-4 w-4 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5"><Check size={10} /></div>
+                      <div key={i} className="flex gap-3 text-xs text-slate-700 leading-tight">
+                        <div className={cn("h-4 w-4 rounded-full flex items-center justify-center shrink-0 mt-0.5", plan.popular ? "bg-rose-50 text-rose-600" : "bg-emerald-50 text-slate-600")}>
+                          <Check size={10} />
+                        </div>
                         <span>{f}</span>
                       </div>
                     ))}
                   </CardContent>
                   <CardFooter className="pt-8">
-                    <Button variant={plan.popular ? "default" : "outline"} className={cn("w-full h-12 text-base font-bold", plan.popular && "bg-rose-500 hover:bg-rose-600 shadow-lg shadow-rose-200")} asChild>
+                    <Button variant={plan.popular ? "default" : "outline"} className={cn("w-full h-12 text-base font-bold transition-all", plan.popular ? "bg-rose-600 hover:bg-rose-700 shadow-lg shadow-rose-200" : "bg-rose-600 text-white hover:bg-rose-700")} asChild>
                       <a href={`?subject=${key}#contact`}>{plan.cta}</a>
                     </Button>
                   </CardFooter>
@@ -155,15 +167,16 @@ export function Pricing() {
         </div>
 
         {/* Catch-up Section */}
-        <div className="mt-20 p-8 rounded-[2rem] bg-emerald-950 text-white flex flex-col md:flex-row items-center justify-between gap-8 border border-emerald-900 shadow-2xl">
-           <div className="flex gap-6 items-center">
-              <div className="h-16 w-16 rounded-2xl bg-rose-400 flex items-center justify-center shadow-lg text-white"><Zap size={32} /></div>
+        <div className="mt-20 p-8 rounded-[2rem] bg-emerald-950 text-white flex flex-col md:flex-row items-center justify-between gap-8 border border-emerald-900 shadow-2xl overflow-hidden relative">
+           <div className="absolute top-0 right-0 w-64 h-64 bg-rose-500/10 blur-[80px] -z-0" />
+           <div className="flex gap-6 items-center relative z-10">
+              <div className="h-16 w-16 rounded-2xl bg-rose-600 flex items-center justify-center shadow-lg text-white"><Zap size={32} /></div>
               <div>
-                 <h3 className="text-2xl font-bold">Besoin d&apos;un rattrapage ?</h3>
-                 <p className="text-emerald-200/70">Mise à jour de dossiers sur plusieurs mois ou années.</p>
+                 <h3 className="text-2xl font-bold text-white">Besoin d&apos;un rattrapage ?</h3>
+                 <p className="text-slate-300">Mise à jour de dossiers sur plusieurs mois ou années.</p>
               </div>
            </div>
-           <Button size="lg" className="bg-white text-emerald-950 hover:bg-emerald-50 rounded-full px-8 h-14 font-black" asChild>
+           <Button size="lg" className="bg-rose-600 text-white hover:bg-rose-700 rounded-full px-8 h-14 font-black relative z-10 shadow-xl shadow-rose-900/40" asChild>
               <a href="?subject=rattrapage#contact">Sur devis uniquement</a>
            </Button>
         </div>

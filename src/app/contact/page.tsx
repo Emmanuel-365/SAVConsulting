@@ -41,7 +41,7 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white text-left">
       <PageHero 
         title="Discutons de vos besoins" 
         subtitle="Vous avez des questions sur nos process ou nos tarifs ? Notre équipe vous répond sous 2 heures ouvrées."
@@ -53,15 +53,15 @@ export default function ContactPage() {
           
           <div className="lg:col-span-1 space-y-12">
             <div>
-              <h3 className="text-2xl font-bold text-emerald-900 mb-6">Coordonnées</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-6 text-left">Coordonnées</h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="h-12 w-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
                     <Phone size={24} />
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-emerald-500 mb-1">Téléphone (France)</p>
-                    <a href="tel:+33659244451" className="text-lg font-bold text-emerald-900 hover:text-emerald-600 transition-colors">06 59 24 44 51</a>
+                    <p className="text-sm font-medium text-slate-500 mb-1">Téléphone (France)</p>
+                    <a href="tel:+33659244451" className="text-lg font-bold text-slate-900 hover:text-emerald-600 transition-colors">06 59 24 44 51</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -69,8 +69,8 @@ export default function ContactPage() {
                     <Mail size={24} />
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-emerald-500 mb-1">Email</p>
-                    <a href="mailto:contact.savconsulting@gmail.com" className="text-lg font-bold text-emerald-900 hover:text-emerald-600 transition-colors break-all">contact.savconsulting@gmail.com</a>
+                    <p className="text-sm font-medium text-slate-500 mb-1">Email</p>
+                    <a href="mailto:contact.savconsulting@gmail.com" className="text-lg font-bold text-slate-900 hover:text-emerald-600 transition-colors break-all">contact.savconsulting@gmail.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -78,8 +78,8 @@ export default function ContactPage() {
                     <Clock size={24} />
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-emerald-500 mb-1">Disponibilité</p>
-                    <p className="text-base font-semibold text-emerald-900">Lun - Ven | 09h - 18h (Paris)</p>
+                    <p className="text-sm font-medium text-slate-500 mb-1">Disponibilité</p>
+                    <p className="text-base font-semibold text-slate-900">Lun - Ven | 09h - 18h (Paris)</p>
                   </div>
                 </div>
               </div>
@@ -97,7 +97,7 @@ export default function ContactPage() {
 
           <div className="lg:col-span-2">
             <div className="bg-white rounded-3xl shadow-xl shadow-emerald-900/5 border border-emerald-50 p-8 md:p-12">
-              <h2 className="text-2xl font-bold text-emerald-900 mb-8">Envoyez-nous un message</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mb-8 text-left">Envoyez-nous un message</h2>
 
               {isSuccess ? (
                 <div className="flex flex-col items-center justify-center text-center py-12 space-y-4 animate-in fade-in zoom-in duration-500 bg-emerald-50 rounded-2xl border border-emerald-100">
@@ -108,13 +108,33 @@ export default function ContactPage() {
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <Input id="firstname" name="firstname" required placeholder="Prénom" className="h-12 bg-emerald-50 border-emerald-200 focus:border-emerald-500" />
-                    <Input id="lastname" name="lastname" required placeholder="Nom" className="h-12 bg-emerald-50 border-emerald-200 focus:border-emerald-500" />
+                    <div className="space-y-2">
+                      <label htmlFor="firstname" className="text-sm font-semibold text-slate-700 text-left block">Prénom *</label>
+                      <Input id="firstname" name="firstname" required placeholder="Prénom" className="h-12 bg-slate-50 border-slate-200 focus:border-emerald-500" />
+                    </div>
+                    <div className="space-y-2">
+                      <label htmlFor="lastname" className="text-sm font-semibold text-slate-700 text-left block">Nom *</label>
+                      <Input id="lastname" name="lastname" required placeholder="Nom" className="h-12 bg-slate-50 border-slate-200 focus:border-emerald-500" />
+                    </div>
                   </div>
-                  <Input id="email" name="email" type="email" required placeholder="Email professionnel" className="h-12 bg-emerald-50 border-emerald-200 focus:border-emerald-500" />
-                  <Textarea id="message" name="message" required placeholder="Votre besoin..." className="min-h-[150px] bg-emerald-50 border-emerald-200 focus:border-emerald-500" />
+                  <div className="space-y-2">
+                    <label htmlFor="email" className="text-sm font-semibold text-slate-700 text-left block">Email professionnel *</label>
+                    <Input id="email" name="email" type="email" required placeholder="Email professionnel" className="h-12 bg-slate-50 border-slate-200 focus:border-emerald-500" />
+                  </div>
+                  <div className="space-y-2">
+                    <label htmlFor="message" className="text-sm font-semibold text-slate-700 text-left block">Votre besoin *</label>
+                    <Textarea id="message" name="message" required placeholder="Votre besoin..." className="min-h-[150px] bg-slate-50 border-slate-200 focus:border-emerald-500" />
+                  </div>
+                  
+                  {error && (
+                    <div className="p-4 rounded-lg bg-red-50 border border-red-100 text-red-600 text-sm flex items-center gap-2">
+                      <AlertCircle size={16} />
+                      {error}
+                    </div>
+                  )}
+
                   <Button disabled={isSubmitting} size="lg" className="w-full h-14 text-lg font-bold bg-emerald-600 hover:bg-emerald-700 shadow-lg shadow-emerald-900/20">
-                    {isSubmitting ? <Loader2 className="animate-spin" /> : <>Envoyer ma demande <ArrowRight className="ml-2" /></>}
+                    {isSubmitting ? <Loader2 className="animate-spin mr-2" /> : <>Envoyer ma demande <ArrowRight className="ml-2" /></>}
                   </Button>
                 </form>
               )}

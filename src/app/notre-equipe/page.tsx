@@ -39,8 +39,8 @@ export default function TeamPage() {
 
       <section className="py-24 container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <h2 className="text-3xl font-bold text-emerald-900 mb-6">Des talents formés et certifiés</h2>
-          <p className="text-emerald-600 text-lg leading-relaxed">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Des talents formés et certifiés</h2>
+          <p className="text-slate-600 text-lg leading-relaxed">
             Notre force réside dans la sélection rigoureuse de nos collaborateurs. Tous sont diplômés et formés en continu aux évolutions de la réglementation française.
           </p>
         </div>
@@ -54,9 +54,9 @@ export default function TeamPage() {
                    <span className="text-4xl font-black text-emerald-200 group-hover:text-rose-200 transition-colors">{member.initials}</span>
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-emerald-900">{member.name}</h3>
+              <h3 className="text-2xl font-bold text-slate-900">{member.name}</h3>
               <p className="text-emerald-600 font-semibold text-sm uppercase tracking-wider mb-4">{member.role}</p>
-              <p className="text-emerald-500 text-sm leading-relaxed">{member.desc}</p>
+              <p className="text-slate-500 text-sm leading-relaxed">{member.desc}</p>
             </div>
           ))}
         </div>

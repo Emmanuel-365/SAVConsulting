@@ -76,12 +76,12 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
             >
-              <Button size="lg" className="h-12 md:h-14 px-8 text-base bg-emerald-600 hover:bg-emerald-700 shadow-lg shadow-emerald-900/30 transition-all w-full sm:w-auto" asChild aria-label="Réserver un audit gratuit">
+              <Button size="lg" className="h-12 md:h-14 px-8 text-base bg-rose-600 hover:bg-rose-700 shadow-lg shadow-rose-900/30 transition-all w-full sm:w-auto" asChild aria-label="Réserver un audit gratuit">
                 <a href="?subject=audit#contact">
                   Réserver un Audit <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="outline" size="lg" className="h-12 md:h-14 px-8 text-base border-emerald-700 text-white hover:bg-emerald-800 transition-colors w-full sm:w-auto" asChild aria-label="Consulter la grille tarifaire">
+              <Button variant="outline" size="lg" className="h-12 md:h-14 px-8 text-base border-rose-500/30 bg-transparent text-rose-300 hover:bg-rose-600 hover:text-white transition-all w-full sm:w-auto" asChild aria-label="Consulter la grille tarifaire">
                 <a href="#pricing">Voir nos tarifs</a>
               </Button>
             </motion.div>
@@ -155,7 +155,7 @@ export function Hero() {
         >
           <div className="flex flex-col md:flex-row gap-12 items-start">
             <div className="md:w-1/3">
-              <h2 className="text-3xl font-black text-white leading-tight">À propos de <br/><span className="text-emerald-500">notre projet.</span></h2>
+              <h2 className="text-3xl font-black text-white leading-tight">À propos de <br/><span className="text-slate-500">notre projet.</span></h2>
               <div className="h-1 w-12 bg-rose-400 mt-4 rounded-full" />
             </div>
             <div className="md:w-2/3 space-y-6 text-emerald-100/80 leading-relaxed text-base md:text-lg">

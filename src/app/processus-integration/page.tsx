@@ -53,12 +53,12 @@ export default function ProcessPage() {
                 <div className="absolute -left-[41px] md:-left-[73px] top-0 h-5 w-5 rounded-full border-4 border-white bg-emerald-600 shadow-sm" />
                 
                 <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start p-6 md:p-8 rounded-3xl bg-emerald-50 border border-emerald-100 hover:bg-white hover:shadow-lg transition-all">
-                   <div className="h-14 w-14 rounded-2xl bg-white border border-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 shadow-sm">
+                   <div className="h-14 w-14 rounded-2xl bg-white border border-emerald-100 text-slate-600 flex items-center justify-center shrink-0 shadow-sm">
                       <step.icon size={28} />
                    </div>
                    <div>
                       <h3 className="text-xl font-bold text-emerald-900 mb-3">{step.title}</h3>
-                      <p className="text-emerald-600 leading-relaxed">
+                      <p className="text-slate-600 leading-relaxed">
                          {step.desc}
                       </p>
                    </div>

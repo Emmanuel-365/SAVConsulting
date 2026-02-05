@@ -44,9 +44,9 @@ export default function AboutPage() {
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-emerald-900 leading-tight">
               Une extension digitale <br/>
-              <span className="text-emerald-600">pour votre cabinet.</span>
+              <span className="text-slate-600">pour votre cabinet.</span>
             </h2>
-            <div className="space-y-4 text-emerald-600 leading-relaxed text-lg">
+            <div className="space-y-4 text-slate-600 leading-relaxed text-lg">
               <p>Basés en France, avec une infrastructure agile et connectée, nous avons bâti une structure capable de s&apos;intégrer parfaitement dans votre organisation.</p>
               <p>Nous devenons une partie intégrante de votre équipe de production, invisible et efficace.</p>
             </div>
@@ -59,7 +59,7 @@ export default function AboutPage() {
                 <p className="text-2xl font-medium text-emerald-900 italic leading-relaxed">
                   &quot;Notre objectif est de rendre l&apos;externalisation si fluide qu&apos;elle devienne un levier de rentabilité immédiat.&quot;
                 </p>
-                <footer className="mt-6 font-bold text-emerald-800">— La Direction, SAV Consulting</footer>
+                <footer className="mt-6 font-bold text-slate-600">— La Direction, SAV Consulting</footer>
              </blockquote>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function AboutPage() {
                   <v.icon size={24} />
                 </div>
                 <h3 className="font-bold text-xl text-emerald-900 mb-2">{v.title}</h3>
-                <p className="text-emerald-500 text-sm">{v.desc}</p>
+                <p className="text-slate-500 text-sm">{v.desc}</p>
               </div>
             ))}
           </div>
