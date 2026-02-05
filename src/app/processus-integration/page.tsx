@@ -47,18 +47,18 @@ export default function ProcessPage() {
       <section className="py-24 container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           
-          <div className="relative border-l-2 border-slate-200 pl-8 md:pl-16 space-y-16">
+          <div className="relative border-l-2 border-emerald-200 pl-8 md:pl-16 space-y-16">
             {steps.map((step, i) => (
               <div key={i} className="relative">
-                <div className="absolute -left-[41px] md:-left-[73px] top-0 h-5 w-5 rounded-full border-4 border-white bg-blue-600 shadow-sm" />
+                <div className="absolute -left-[41px] md:-left-[73px] top-0 h-5 w-5 rounded-full border-4 border-white bg-emerald-600 shadow-sm" />
                 
-                <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start p-6 md:p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-lg transition-all">
-                   <div className="h-14 w-14 rounded-2xl bg-white border border-slate-100 text-blue-600 flex items-center justify-center shrink-0 shadow-sm">
+                <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start p-6 md:p-8 rounded-3xl bg-emerald-50 border border-emerald-100 hover:bg-white hover:shadow-lg transition-all">
+                   <div className="h-14 w-14 rounded-2xl bg-white border border-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 shadow-sm">
                       <step.icon size={28} />
                    </div>
                    <div>
-                      <h3 className="text-xl font-bold text-slate-900 mb-3">{step.title}</h3>
-                      <p className="text-slate-600 leading-relaxed">
+                      <h3 className="text-xl font-bold text-emerald-900 mb-3">{step.title}</h3>
+                      <p className="text-emerald-600 leading-relaxed">
                          {step.desc}
                       </p>
                    </div>
@@ -71,17 +71,17 @@ export default function ProcessPage() {
       </section>
 
       {/* FAQ Technique */}
-      <section className="py-24 bg-slate-900 text-white">
+      <section className="py-24 bg-emerald-950 text-white">
          <div className="container mx-auto px-4 max-w-3xl">
             <h2 className="text-3xl font-bold mb-12 text-center">Questions Techniques</h2>
             <div className="space-y-8">
                <div>
-                  <h4 className="font-bold text-xl mb-2 flex items-center gap-3"><MessageSquare className="text-blue-400"/> Comment communique-t-on au quotidien ?</h4>
-                  <p className="text-slate-400 pl-9">Nous utilisons vos canaux : Email, Teams, Slack, WhatsApp ou via les commentaires de votre outil de production (ACD, Pennylane...).</p>
+                  <h4 className="font-bold text-xl mb-2 flex items-center gap-3"><MessageSquare className="text-rose-400"/> Comment communique-t-on au quotidien ?</h4>
+                  <p className="text-emerald-100/60 pl-9">Nous utilisons vos canaux : Email, Teams, Slack, WhatsApp ou via les commentaires de votre outil de production (ACD, Pennylane...).</p>
                </div>
                <div>
-                  <h4 className="font-bold text-xl mb-2 flex items-center gap-3"><Monitor className="text-blue-400"/> Avez-vous besoin d&apos;une licence supplémentaire ?</h4>
-                  <p className="text-slate-400 pl-9">Oui, généralement il faut créer un accès utilisateur pour notre collaborateur. Le coût de cette licence reste à votre charge, mais c&apos;est le seul coût caché.</p>
+                  <h4 className="font-bold text-xl mb-2 flex items-center gap-3"><Monitor className="text-rose-400"/> Avez-vous besoin d&apos;une licence supplémentaire ?</h4>
+                  <p className="text-emerald-100/60 pl-9">Oui, généralement il faut créer un accès utilisateur pour notre collaborateur. Le coût de cette licence reste à votre charge, mais c&apos;est le seul coût caché.</p>
                </div>
             </div>
          </div>

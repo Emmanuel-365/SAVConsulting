@@ -1,6 +1,5 @@
 import { PageHero } from "@/components/layout/PageHero";
 import { Metadata } from "next";
-import Image from "next/image";
 import { GraduationCap, Briefcase, Award } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -38,61 +37,59 @@ export default function TeamPage() {
         badge="Humain & Expertise"
       />
 
-      {/* Intro Section */}
       <section className="py-24 container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Des talents formés et certifiés</h2>
-          <p className="text-slate-600 text-lg leading-relaxed">
-            Notre force réside dans la sélection rigoureuse de nos collaborateurs. Tous nos comptables et gestionnaires de paie sont diplômés et formés en continu aux évolutions de la réglementation française.
+        <div className="max-w-3xl mx-auto text-center mb-20">
+          <h2 className="text-3xl font-bold text-emerald-900 mb-6">Des talents formés et certifiés</h2>
+          <p className="text-emerald-600 text-lg leading-relaxed">
+            Notre force réside dans la sélection rigoureuse de nos collaborateurs. Tous sont diplômés et formés en continu aux évolutions de la réglementation française.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {team.map((member, i) => (
             <div key={i} className="group text-center">
               <div className="relative w-48 h-48 mx-auto mb-6">
-                <div className="absolute inset-0 bg-blue-600 rounded-full rotate-6 group-hover:rotate-12 transition-transform duration-300" />
-                <div className="absolute inset-0 bg-slate-100 rounded-full flex items-center justify-center border-4 border-white shadow-xl overflow-hidden">
-                   <span className="text-4xl font-black text-slate-300">{member.initials}</span>
+                <div className="absolute inset-0 bg-emerald-600 rounded-full rotate-6 group-hover:rotate-12 transition-transform duration-300 opacity-20" />
+                <div className="absolute inset-0 bg-white rounded-full flex items-center justify-center border-4 border-emerald-50 shadow-xl overflow-hidden group-hover:border-rose-100 transition-colors">
+                   <span className="text-4xl font-black text-emerald-200 group-hover:text-rose-200 transition-colors">{member.initials}</span>
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-slate-900">{member.name}</h3>
-              <p className="text-blue-600 font-semibold text-sm uppercase tracking-wider mb-4">{member.role}</p>
-              <p className="text-slate-500 text-sm leading-relaxed">{member.desc}</p>
+              <h3 className="text-2xl font-bold text-emerald-900">{member.name}</h3>
+              <p className="text-emerald-600 font-semibold text-sm uppercase tracking-wider mb-4">{member.role}</p>
+              <p className="text-emerald-500 text-sm leading-relaxed">{member.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Expertise Stats */}
-      <section className="py-24 bg-slate-900 text-white">
+      <section className="py-24 bg-emerald-950 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="flex items-start gap-6">
-              <div className="h-14 w-14 rounded-2xl bg-blue-600/20 text-blue-400 flex items-center justify-center shrink-0 border border-blue-400/20">
+              <div className="h-14 w-14 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-400/20">
                 <GraduationCap size={28} />
               </div>
               <div>
                 <h4 className="text-xl font-bold mb-2">Diplômés d&apos;État</h4>
-                <p className="text-slate-400 text-sm">Formation académique rigoureuse en comptabilité et gestion.</p>
+                <p className="text-emerald-100/60 text-sm">Formation académique rigoureuse en comptabilité et gestion.</p>
               </div>
             </div>
             <div className="flex items-start gap-6">
-              <div className="h-14 w-14 rounded-2xl bg-blue-600/20 text-blue-400 flex items-center justify-center shrink-0 border border-blue-400/20">
+              <div className="h-14 w-14 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center shrink-0 border border-rose-400/20">
                 <Briefcase size={28} />
               </div>
               <div>
                 <h4 className="text-xl font-bold mb-2">Expérience Cabinet</h4>
-                <p className="text-slate-400 text-sm">Nos superviseurs ont tous travaillé en cabinet d&apos;expertise français.</p>
+                <p className="text-emerald-100/60 text-sm">Nos superviseurs ont tous travaillé en cabinet d&apos;expertise français.</p>
               </div>
             </div>
             <div className="flex items-start gap-6">
-              <div className="h-14 w-14 rounded-2xl bg-blue-600/20 text-blue-400 flex items-center justify-center shrink-0 border border-blue-400/20">
+              <div className="h-14 w-14 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-400/20">
                 <Award size={28} />
               </div>
               <div>
                 <h4 className="text-xl font-bold mb-2">Veille Continue</h4>
-                <p className="text-slate-400 text-sm">Mise à jour régulière sur les lois de finances et conventions collectives.</p>
+                <p className="text-emerald-100/60 text-sm">Mise à jour régulière sur les lois de finances et conventions.</p>
               </div>
             </div>
           </div>

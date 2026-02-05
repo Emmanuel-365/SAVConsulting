@@ -14,7 +14,7 @@ const steps = [
   {
     icon: ClipboardList,
     title: "Définition du Périmètre",
-    desc: "Validation précise des tâches déléguées (Saisie, Lettrage, Paie) selon VOTRE plan comptable.",
+    desc: "Validation précise des tâches déléguées (Saisie, Lettrage, Paie) selon vos besoins spécifiques.",
     number: "02"
   },
   {
@@ -46,18 +46,18 @@ export function Method() {
               viewport={{ once: true }}
               className="mb-12 md:mb-16 text-center lg:text-left"
             >
-              <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 md:mb-6 leading-tight">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-emerald-950 mb-4 md:mb-6 leading-tight">
                 Une intégration fluide,<br/> 
-                <span className="text-blue-600">sans friction.</span>
+                <span className="text-emerald-600">sans friction.</span>
               </h2>
-              <p className="text-base md:text-lg text-slate-600 leading-relaxed">
+              <p className="text-base md:text-lg text-emerald-800/60 leading-relaxed">
                 Notre process est rodé pour s'insérer dans votre cabinet sans perturber vos habitudes.
               </p>
             </motion.div>
 
             <div className="relative space-y-8 md:space-y-12 pl-2">
               {/* Vertical Line Background */}
-              <div className="absolute left-[27px] top-4 bottom-4 w-0.5 bg-slate-100 -z-10" />
+              <div className="absolute left-[27px] top-4 bottom-4 w-0.5 bg-emerald-50 -z-10" />
               
               {/* Vertical Line Progress (Animated) */}
               <motion.div 
@@ -65,7 +65,7 @@ export function Method() {
                  whileInView={{ height: "100%" }}
                  viewport={{ once: true }}
                  transition={{ duration: 1.5, ease: "easeInOut" }}
-                 className="absolute left-[27px] top-4 w-0.5 bg-gradient-to-b from-blue-600 to-transparent -z-10 origin-top"
+                 className="absolute left-[27px] top-4 w-0.5 bg-gradient-to-b from-emerald-600 to-transparent -z-10 origin-top"
               />
 
               {steps.map((step, index) => (
@@ -79,21 +79,21 @@ export function Method() {
                 >
                   {/* Icon Bubble */}
                   <div className="relative flex-shrink-0">
-                    <div className="w-14 h-14 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center text-blue-600 group-hover:border-blue-200 group-hover:shadow-blue-100 transition-all duration-300 z-10 relative">
+                    <div className="w-14 h-14 rounded-2xl bg-white border border-emerald-100 shadow-sm flex items-center justify-center text-emerald-600 group-hover:border-emerald-200 group-hover:shadow-emerald-50 transition-all duration-300 z-10 relative">
                       <step.icon className="h-6 w-6" />
                     </div>
                     {/* Number Badge */}
-                    <div className="absolute -top-2 -right-2 bg-slate-900 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-md shadow-sm">
+                    <div className="absolute -top-2 -right-2 bg-emerald-950 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-md shadow-sm">
                       {step.number}
                     </div>
                   </div>
 
                   {/* Text */}
-                  <div className="pt-1">
-                    <h3 className="font-bold text-lg md:text-xl text-slate-900 group-hover:text-blue-600 transition-colors">
+                  <div className="pt-1 text-left">
+                    <h3 className="font-bold text-lg md:text-xl text-emerald-950 group-hover:text-emerald-600 transition-colors">
                       {step.title}
                     </h3>
-                    <p className="text-slate-500 leading-relaxed mt-2 text-sm md:text-base">
+                    <p className="text-emerald-800/60 leading-relaxed mt-2 text-sm md:text-base">
                       {step.desc}
                     </p>
                   </div>
@@ -102,7 +102,7 @@ export function Method() {
             </div>
           </div>
 
-          {/* Right: Visual (Hidden on mobile to save space) */}
+          {/* Right: Visual */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -110,28 +110,28 @@ export function Method() {
             transition={{ duration: 0.5 }}
             className="lg:w-1/2 relative hidden lg:block"
           >
-             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/5] bg-slate-50">
+             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-emerald-50 aspect-[4/5] bg-emerald-50/20">
                 <Image 
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1000&auto=format&fit=crop"
                   alt="Collaboration équipe"
                   fill
-                  className="object-cover opacity-90"
+                  className="object-cover opacity-90 grayscale hover:grayscale-0 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-transparent to-transparent"></div>
                 
                 {/* Floating Feedback Card */}
-                <div className="absolute bottom-10 left-10 right-10 bg-white/95 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-xl">
+                <div className="absolute bottom-10 left-10 right-10 bg-white/95 backdrop-blur-md p-6 rounded-2xl border border-emerald-100 shadow-xl">
                   <div className="flex items-start gap-4">
-                     <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold shrink-0">JD</div>
+                     <div className="h-10 w-10 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-600 font-bold shrink-0">JD</div>
                      <div>
-                        <p className="text-sm font-medium text-slate-800 italic leading-relaxed">
+                        <p className="text-sm font-medium text-emerald-900 italic leading-relaxed">
                           "L'équipe a su s'adapter à notre process sur Silae en moins d'une semaine. Un gain de temps immédiat."
                         </p>
                         <div className="mt-3 flex items-center gap-2">
-                           <div className="flex text-yellow-400">
+                           <div className="flex text-rose-400">
                               {[1,2,3,4,5].map(i => <svg key={i} className="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>)}
                            </div>
-                           <span className="text-xs text-slate-500 font-semibold">Jean D. - Expert-Comptable (Paris)</span>
+                           <span className="text-xs text-emerald-600 font-semibold uppercase tracking-wider">Jean D. - Expert-Comptable (Paris)</span>
                         </div>
                      </div>
                   </div>

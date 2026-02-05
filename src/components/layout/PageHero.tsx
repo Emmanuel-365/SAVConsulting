@@ -10,10 +10,10 @@ interface PageHeroProps {
 
 export function PageHero({ title, subtitle, badge }: PageHeroProps) {
   return (
-    <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-slate-950 text-white">
+    <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-emerald-950 text-white">
       {/* Background Decoration */}
       <div className="absolute inset-0 overflow-hidden -z-0">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_50%_-20%,#2563eb30,transparent_70%)]" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_50%_-20%,rgba(16,185,129,0.2),transparent_70%)]" />
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 mix-blend-overlay" />
       </div>
 
@@ -24,14 +24,14 @@ export function PageHero({ title, subtitle, badge }: PageHeroProps) {
           transition={{ duration: 0.5 }}
         >
           {badge && (
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs md:text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs md:text-sm font-medium mb-6">
               {badge}
             </span>
           )}
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6">
+          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 text-white">
             {title}
           </h1>
-          <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-emerald-100/60 max-w-2xl mx-auto leading-relaxed">
             {subtitle}
           </p>
         </motion.div>

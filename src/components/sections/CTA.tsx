@@ -66,15 +66,15 @@ function CTAContent() {
         </p>
         <div className="space-y-4 pt-4">
            <div className="flex items-center gap-4">
-              <div className="h-10 w-10 rounded-full bg-slate-800 flex items-center justify-center text-blue-400 font-bold">1</div>
+              <div className="h-10 w-10 rounded-full bg-emerald-950 flex items-center justify-center text-rose-300 font-bold border border-emerald-800">1</div>
               <p>Audit de vos volumes</p>
            </div>
            <div className="flex items-center gap-4">
-              <div className="h-10 w-10 rounded-full bg-slate-800 flex items-center justify-center text-blue-400 font-bold">2</div>
+              <div className="h-10 w-10 rounded-full bg-emerald-950 flex items-center justify-center text-rose-300 font-bold border border-emerald-800">2</div>
               <p>Proposition tarifaire sur mesure</p>
            </div>
            <div className="flex items-center gap-4">
-              <div className="h-10 w-10 rounded-full bg-slate-800 flex items-center justify-center text-blue-400 font-bold">3</div>
+              <div className="h-10 w-10 rounded-full bg-emerald-950 flex items-center justify-center text-rose-300 font-bold border border-emerald-800">3</div>
               <p>Démarrage du pilote</p>
            </div>
         </div>
@@ -83,16 +83,16 @@ function CTAContent() {
       <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl">
         {isSuccess ? (
           <div className="h-full flex flex-col items-center justify-center text-center py-12 space-y-4 animate-in fade-in zoom-in duration-500">
-            <div className="h-16 w-16 bg-green-500/20 text-green-400 rounded-full flex items-center justify-center">
+            <div className="h-16 w-16 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center">
               <CheckCircle2 className="h-8 w-8" />
             </div>
-            <h3 className="text-2xl font-bold">Message envoyé !</h3>
+            <h3 className="text-2xl font-bold text-white">Message envoyé !</h3>
             <p className="text-slate-300">
               Merci de votre intérêt. Nous revenons vers vous sous 24h ouvrées.
             </p>
             <Button 
               variant="outline" 
-              className="mt-6 border-slate-700 hover:bg-slate-800 text-white"
+              className="mt-6 border-emerald-700 hover:bg-emerald-800 text-white"
               onClick={() => setIsSuccess(false)}
             >
               Envoyer un autre message
@@ -103,17 +103,17 @@ function CTAContent() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
                 <label htmlFor="firstname" className="text-sm font-medium text-slate-300">Prénom</label>
-                <Input id="firstname" name="firstname" required placeholder="Jean" className="bg-slate-800/50 border-slate-700 text-white placeholder:text-slate-500" />
+                <Input id="firstname" name="firstname" required placeholder="Jean" className="bg-emerald-950/50 border-emerald-800 text-white placeholder:text-emerald-700 focus:border-emerald-500 focus:ring-emerald-500" />
               </div>
               <div className="space-y-2">
                 <label htmlFor="lastname" className="text-sm font-medium text-slate-300">Nom</label>
-                <Input id="lastname" name="lastname" required placeholder="Dupont" className="bg-slate-800/50 border-slate-700 text-white placeholder:text-slate-500" />
+                <Input id="lastname" name="lastname" required placeholder="Dupont" className="bg-emerald-950/50 border-emerald-800 text-white placeholder:text-emerald-700 focus:border-emerald-500 focus:ring-emerald-500" />
               </div>
             </div>
             
             <div className="space-y-2">
               <label htmlFor="email" className="text-sm font-medium text-slate-300">Email pro</label>
-              <Input id="email" name="email" type="email" required placeholder="jean@cabinet-dupont.fr" className="bg-slate-800/50 border-slate-700 text-white placeholder:text-slate-500" />
+              <Input id="email" name="email" type="email" required placeholder="jean@cabinet-dupont.fr" className="bg-emerald-950/50 border-emerald-800 text-white placeholder:text-emerald-700 focus:border-emerald-500 focus:ring-emerald-500" />
             </div>
 
             <div className="space-y-2">
@@ -124,7 +124,7 @@ function CTAContent() {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Je souhaite externaliser la paie..." 
-                className="bg-slate-800/50 border-slate-700 text-white placeholder:text-slate-500 min-h-[100px]" 
+                className="bg-emerald-950/50 border-emerald-800 text-white placeholder:text-emerald-700 focus:border-emerald-500 focus:ring-emerald-500 min-h-[100px]" 
               />
             </div>
 
@@ -135,7 +135,7 @@ function CTAContent() {
               </div>
             )}
 
-            <Button disabled={isSubmitting} size="lg" className="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold">
+            <Button disabled={isSubmitting} size="lg" className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition-all shadow-lg shadow-emerald-900/40">
               {isSubmitting ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Envoi en cours...
@@ -144,7 +144,7 @@ function CTAContent() {
                 "Envoyer ma demande"
               )}
             </Button>
-            <p className="text-xs text-center text-slate-500 mt-4">
+            <p className="text-xs text-center text-emerald-500 mt-4">
               Vos données restent confidentielles.
             </p>
           </form>
@@ -156,11 +156,11 @@ function CTAContent() {
 
 export function CTA() {
   return (
-    <section id="contact" className="py-24 bg-slate-900 text-white overflow-hidden relative">
+    <section id="contact" className="py-24 bg-emerald-950 text-white overflow-hidden relative">
        {/* Background Decoration */}
        <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-20 pointer-events-none">
-          <div className="absolute -top-1/2 -right-1/2 w-[1000px] h-[1000px] rounded-full bg-blue-600 blur-[120px]" />
-          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-indigo-600 blur-[100px]" />
+          <div className="absolute -top-1/2 -right-1/2 w-[1000px] h-[1000px] rounded-full bg-emerald-600 blur-[120px]" />
+          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-rose-500 blur-[100px]" />
        </div>
 
       <div className="container mx-auto px-4 relative z-10">

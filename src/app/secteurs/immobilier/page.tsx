@@ -1,6 +1,6 @@
 import { PageHero } from "@/components/layout/PageHero";
 import { Metadata } from "next";
-import { Home, Calculator, Key, Briefcase, ArrowRight } from "lucide-react";
+import { Home, Calculator } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -21,49 +21,49 @@ export default function RealEstateSectorPage() {
       <section className="py-24 container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">Le marché de l&apos;immobilier demande de la <span className="text-blue-600">réactivité</span>.</h2>
-            <p className="text-lg text-slate-600 leading-relaxed mb-8">
-              La gestion des SCI et des loueurs en meublé (LMNP/LMP) génère un volume important de petits dossiers. Nous avons industrialisé le traitement de ces flux pour vous permettre de maintenir une rentabilité élevée sur ces missions.
+            <h2 className="text-3xl font-bold text-emerald-900 mb-6">Le marché de l&apos;immobilier demande de la <span className="text-emerald-600 italic">réactivité</span>.</h2>
+            <p className="text-lg text-emerald-600 leading-relaxed mb-8">
+              La gestion des SCI et des loueurs en meublé (LMNP/LMP) génère un volume important de dossiers. Nous avons industrialisé le traitement de ces flux.
             </p>
             
             <div className="space-y-6">
-              <div className="flex gap-4 p-6 rounded-2xl bg-slate-50 border border-slate-100">
-                <div className="h-10 w-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0"><Calculator size={20}/></div>
+              <div className="flex gap-4 p-6 rounded-2xl bg-emerald-50 border border-emerald-100">
+                <div className="h-10 w-10 rounded-full bg-white text-emerald-600 flex items-center justify-center shrink-0 border border-emerald-100"><Calculator size={20}/></div>
                 <div>
-                  <h4 className="font-bold text-slate-900">LMNP / LMP</h4>
-                  <p className="text-sm text-slate-500">Traitement des amortissements, déduction des charges et liasses fiscales spécifiques.</p>
+                  <h4 className="font-bold text-emerald-900">LMNP / LMP</h4>
+                  <p className="text-sm text-emerald-500">Traitement des amortissements et liasses fiscales spécifiques.</p>
                 </div>
               </div>
-              <div className="flex gap-4 p-6 rounded-2xl bg-slate-50 border border-slate-100">
-                <div className="h-10 w-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0"><Home size={20}/></div>
+              <div className="flex gap-4 p-6 rounded-2xl bg-emerald-50 border border-emerald-100">
+                <div className="h-10 w-10 rounded-full bg-white text-emerald-600 flex items-center justify-center shrink-0 border border-emerald-100"><Home size={20}/></div>
                 <div>
-                  <h4 className="font-bold text-slate-900">SCI (IR / IS)</h4>
-                  <p className="text-sm text-slate-500">Comptabilité complète, déclarations 2072 ou liasses IS selon l&apos;option fiscale.</p>
+                  <h4 className="font-bold text-emerald-900">SCI (IR / IS)</h4>
+                  <p className="text-sm text-emerald-500">Comptabilité complète et déclarations 2072 / IS.</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="relative">
-             <div className="bg-blue-600 rounded-[2.5rem] p-12 text-white shadow-2xl shadow-blue-200">
+             <div className="bg-emerald-950 rounded-[2.5rem] p-12 text-white shadow-2xl border border-emerald-900">
                 <h3 className="text-3xl font-bold mb-6">Vos avantages</h3>
                 <ul className="space-y-6">
                   <li className="flex items-center gap-4">
-                    <div className="h-2 w-2 rounded-full bg-white" />
-                    <span>Réduction du coût de revient au dossier</span>
+                    <div className="h-2 w-2 rounded-full bg-rose-400" />
+                    <span>Réduction du coût au dossier</span>
                   </li>
                   <li className="flex items-center gap-4">
-                    <div className="h-2 w-2 rounded-full bg-white" />
-                    <span>Respect des délais de déclaration fiscale</span>
+                    <div className="h-2 w-2 rounded-full bg-rose-400" />
+                    <span>Respect des délais de déclaration</span>
                   </li>
                   <li className="flex items-center gap-4">
-                    <div className="h-2 w-2 rounded-full bg-white" />
-                    <span>Connaissance des outils type MEG / MyUnisoft</span>
+                    <div className="h-2 w-2 rounded-full bg-rose-400" />
+                    <span>Maîtrise des outils experts</span>
                   </li>
                 </ul>
                 <div className="mt-12">
-                  <Button className="bg-white text-blue-600 hover:bg-slate-50 rounded-full w-full h-14 text-lg font-bold" asChild>
-                    <Link href="/#contact?subject=immobilier">Parler à un expert Immobilier</Link>
+                  <Button className="bg-emerald-600 text-white hover:bg-emerald-700 rounded-full w-full h-14 text-lg font-bold shadow-lg shadow-emerald-900/40" asChild>
+                    <Link href="/contact?subject=immobilier">Parler à un expert Immobilier</Link>
                   </Button>
                 </div>
              </div>

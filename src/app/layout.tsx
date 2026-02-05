@@ -77,8 +77,8 @@ export default function RootLayout({
     "email": "contact.savconsulting@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Douala",
-      "addressCountry": "CM"
+      "addressLocality": "France",
+      "addressCountry": "FR"
     },
     "serviceType": ["Comptabilité", "Paie", "Fiscalité"],
     "offers": {

@@ -49,11 +49,11 @@ export function Navbar() {
         <nav className={cn("container mx-auto transition-all duration-700 cubic-bezier(0.4, 0, 0.2, 1)", isScrolled ? "max-w-5xl bg-white/80 backdrop-blur-xl border border-white/40 shadow-2xl rounded-full py-2 px-6" : "max-w-7xl bg-transparent py-2 px-0")}>
           <div className="flex items-center justify-between">
             {/* LOGO */}
-            <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight text-slate-900 group shrink-0" onClick={() => setIsOpen(false)}>
-              <div className="bg-blue-600 text-white p-1.5 rounded-xl group-hover:rotate-12 transition-transform duration-500 shadow-lg shadow-blue-500/20">
+            <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight text-emerald-900 group shrink-0" onClick={() => setIsOpen(false)}>
+              <div className="bg-emerald-600 text-white p-1.5 rounded-xl group-hover:rotate-12 transition-transform duration-500 shadow-lg shadow-emerald-500/20">
                 <BarChart3 className="w-5 h-5" />
               </div>
-              <span className="hidden sm:inline">SAV<span className="text-blue-600">Consulting</span></span>
+              <span className="hidden sm:inline italic">SAV<span className="text-emerald-600">Consulting</span></span>
             </Link>
 
             {/* DESKTOP NAV */}
@@ -61,12 +61,11 @@ export function Navbar() {
               <NavigationMenu>
                 <NavigationMenuList className="gap-1">
                   
-                  {/* Dropdown Expertise */}
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="bg-transparent font-semibold text-slate-600 hover:text-blue-600 transition-colors h-10 px-4 rounded-full">
+                    <NavigationMenuTrigger className="bg-transparent font-semibold text-emerald-600 hover:text-emerald-600 transition-colors h-10 px-4 rounded-full">
                       Expertise
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent className="rounded-3xl border-slate-100 shadow-2xl">
+                    <NavigationMenuContent className="rounded-3xl border-emerald-100 shadow-2xl">
                       <ul className="grid w-[400px] gap-2 p-6 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-white/95 backdrop-blur-xl">
                         {expertiseLinks.map((link) => (
                           <ListItem key={link.title} title={link.title} href={link.href} icon={link.icon}>
@@ -77,12 +76,11 @@ export function Navbar() {
                     </NavigationMenuContent>
                   </NavigationMenuItem>
 
-                  {/* Dropdown Société */}
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="bg-transparent font-semibold text-slate-600 hover:text-blue-600 transition-colors h-10 px-4 rounded-full">
+                    <NavigationMenuTrigger className="bg-transparent font-semibold text-emerald-600 hover:text-emerald-600 transition-colors h-10 px-4 rounded-full">
                       Société
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent className="rounded-3xl border-slate-100 shadow-2xl">
+                    <NavigationMenuContent className="rounded-3xl border-emerald-100 shadow-2xl">
                       <ul className="grid w-[400px] gap-2 p-6 md:w-[500px] md:grid-cols-2 bg-white/95 backdrop-blur-xl">
                         {companyLinks.map((link) => (
                           <ListItem key={link.title} title={link.title} href={link.href} icon={link.icon}>
@@ -93,19 +91,17 @@ export function Navbar() {
                     </NavigationMenuContent>
                   </NavigationMenuItem>
 
-                  {/* Lien Success Stories */}
                   <NavigationMenuItem>
                     <Link href="/etudes-de-cas" legacyBehavior passHref>
-                      <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent font-semibold text-slate-600 hover:text-blue-600 h-10 px-4 rounded-full")}>
+                      <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent font-semibold text-emerald-600 hover:text-emerald-600 h-10 px-4 rounded-full")}>
                         Success Stories
                       </NavigationMenuLink>
                     </Link>
                   </NavigationMenuItem>
 
-                  {/* LIEN CONTACT PRINCIPAL */}
                   <NavigationMenuItem>
                     <Link href="/contact" legacyBehavior passHref>
-                      <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent font-semibold text-slate-600 hover:text-blue-600 h-10 px-4 rounded-full")}>
+                      <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent font-semibold text-emerald-600 hover:text-emerald-600 h-10 px-4 rounded-full")}>
                         Contact
                       </NavigationMenuLink>
                     </Link>
@@ -114,7 +110,7 @@ export function Navbar() {
                 </NavigationMenuList>
               </NavigationMenu>
 
-              <Button size="sm" className="rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-all px-6 ml-4 shadow-lg shadow-blue-500/20" asChild>
+              <Button size="sm" className="rounded-full bg-rose-600 text-white hover:bg-rose-700 transition-all px-6 ml-4 shadow-lg shadow-rose-500/20" asChild>
                 <Link href="/contact?subject=audit">
                   Audit Gratuit <ArrowRight className="ml-2 h-3 w-3" />
                 </Link>
@@ -122,10 +118,10 @@ export function Navbar() {
             </div>
 
             {/* MOBILE BURGER BUTTON */}
-            <button onClick={() => setIsOpen(!isOpen)} className="md:hidden relative z-[110] p-2 -mr-2 flex flex-col gap-1.5 items-center justify-center w-10 h-10 group bg-slate-100 rounded-full" aria-label="Menu">
-              <motion.span animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }} className="w-5 h-0.5 bg-slate-900 rounded-full" />
-              <motion.span animate={isOpen ? { opacity: 0 } : { opacity: 1 }} className="w-5 h-0.5 bg-slate-900 rounded-full" />
-              <motion.span animate={isOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }} className="w-5 h-0.5 bg-slate-900 rounded-full" />
+            <button onClick={() => setIsOpen(!isOpen)} className="md:hidden relative z-[110] p-2 -mr-2 flex flex-col gap-1.5 items-center justify-center w-10 h-10 group bg-emerald-50 rounded-full" aria-label="Menu">
+              <motion.span animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }} className="w-5 h-0.5 bg-emerald-900 rounded-full" />
+              <motion.span animate={isOpen ? { opacity: 0 } : { opacity: 1 }} className="w-5 h-0.5 bg-emerald-900 rounded-full" />
+              <motion.span animate={isOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }} className="w-5 h-0.5 bg-emerald-900 rounded-full" />
             </button>
           </div>
         </nav>
@@ -144,40 +140,40 @@ export function Navbar() {
             <div className="flex flex-col gap-10">
               
               <div className="space-y-6">
-                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 opacity-60">Expertise</p>
+                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-emerald-600 opacity-60">Expertise</p>
                 <div className="grid gap-4">
                   {expertiseLinks.map((link) => (
-                    <Link key={link.title} href={link.href} onClick={() => setIsOpen(false)} className="text-3xl font-black text-slate-900 flex items-center justify-between group">
-                      {link.title} <ArrowRight className="text-slate-300 group-hover:text-blue-600 transition-colors" size={24} />
+                    <Link key={link.title} href={link.href} onClick={() => setIsOpen(false)} className="text-3xl font-black text-emerald-900 flex items-center justify-between group">
+                      {link.title} <ArrowRight className="text-slate-300 group-hover:text-emerald-600 transition-colors" size={24} />
                     </Link>
                   ))}
                 </div>
               </div>
 
               <div className="space-y-6">
-                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 opacity-60">Société</p>
+                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-emerald-600 opacity-60">Société</p>
                 <div className="grid gap-4">
                   {companyLinks.map((link) => (
-                    <Link key={link.title} href={link.href} onClick={() => setIsOpen(false)} className="text-2xl font-bold text-slate-700 hover:text-blue-600">
+                    <Link key={link.title} href={link.href} onClick={() => setIsOpen(false)} className="text-2xl font-bold text-emerald-700 hover:text-emerald-600">
                       {link.title}
                     </Link>
                   ))}
-                  <Link href="/etudes-de-cas" onClick={() => setIsOpen(false)} className="text-2xl font-bold text-slate-700 hover:text-blue-600 underline underline-offset-8 decoration-slate-200">
+                  <Link href="/etudes-de-cas" onClick={() => setIsOpen(false)} className="text-2xl font-bold text-emerald-700 hover:text-emerald-600 underline underline-offset-8 decoration-emerald-100">
                     Success Stories
                   </Link>
-                  <Link href="/contact" onClick={() => setIsOpen(false)} className="text-2xl font-bold text-slate-700 hover:text-blue-600">
+                  <Link href="/contact" onClick={() => setIsOpen(false)} className="text-2xl font-bold text-emerald-700 hover:text-emerald-600">
                     Contact
                   </Link>
                 </div>
               </div>
 
-              <div className="pt-10 border-t border-slate-100 flex flex-col gap-4">
-                <Button size="lg" className="rounded-full bg-slate-900 h-16 text-xl shadow-xl shadow-slate-900/20" asChild>
+              <div className="pt-10 border-t border-emerald-100 flex flex-col gap-4">
+                <Button size="lg" className="rounded-full bg-rose-600 h-16 text-xl shadow-xl shadow-rose-900/20" asChild>
                   <Link href="/contact?subject=audit" onClick={() => setIsOpen(false)}>Réserver un Audit</Link>
                 </Button>
-                <div className="flex items-center justify-center gap-2 text-slate-400">
+                <div className="flex items-center justify-center gap-2 text-emerald-400">
                    <Mail size={14} />
-                   <span className="text-xs font-medium">Réponse garantie sous 2h</span>
+                   <span className="text-xs font-medium">Réponse sous 2h garantie</span>
                 </div>
               </div>
             </div>
@@ -198,18 +194,18 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "group block select-none space-y-1 rounded-[1.5rem] p-4 leading-none no-underline outline-none transition-all hover:bg-blue-50 hover:text-blue-600 focus:bg-blue-50",
+            "group block select-none space-y-1 rounded-[1.5rem] p-4 leading-none no-underline outline-none transition-all hover:bg-emerald-50 hover:text-emerald-600 focus:bg-emerald-50",
             className
           )}
           {...props}
         >
           <div className="flex items-center gap-3">
-            <div className="h-8 w-8 rounded-lg bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+            <div className="h-8 w-8 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-400 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
               {Icon && <Icon size={16} />}
             </div>
             <div className="text-sm font-bold leading-none">{title}</div>
           </div>
-          <p className="line-clamp-2 text-xs leading-snug text-slate-500 mt-2 group-hover:text-blue-600/80 transition-colors">
+          <p className="line-clamp-2 text-xs leading-snug text-emerald-500 mt-2 group-hover:text-emerald-600/80 transition-colors">
             {children}
           </p>
         </a>

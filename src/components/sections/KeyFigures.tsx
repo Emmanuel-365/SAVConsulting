@@ -4,10 +4,10 @@ import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { label: "Lignes traitées / an", value: 500000, suffix: "+", color: "text-blue-600" },
-  { label: "Bulletins de paie / mois", value: 2500, suffix: "+", color: "text-indigo-600" },
-  { label: "Réactivité moyenne", value: 2, suffix: "h", color: "text-green-600" },
-  { label: "Taux de fidélité", value: 98, suffix: "%", color: "text-purple-600" },
+  { label: "Lignes traitées / an", value: 500000, suffix: "+", color: "text-emerald-600" },
+  { label: "Bulletins de paie / mois", value: 2500, suffix: "+", color: "text-rose-400" },
+  { label: "Réactivité moyenne", value: 2, suffix: "h", color: "text-emerald-500" },
+  { label: "Taux de fidélité", value: 98, suffix: "%", color: "text-emerald-700" },
 ];
 
 function Counter({ value, suffix }: { value: number; suffix: string }) {
@@ -45,7 +45,7 @@ function Counter({ value, suffix }: { value: number; suffix: string }) {
 
 export function KeyFigures() {
   return (
-    <section className="py-20 bg-white border-y border-slate-100">
+    <section className="py-20 bg-white border-y border-emerald-50">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {stats.map((stat, index) => (
@@ -60,7 +60,7 @@ export function KeyFigures() {
               <div className={`text-3xl md:text-5xl font-black tracking-tighter ${stat.color}`}>
                 <Counter value={stat.value} suffix={stat.suffix} />
               </div>
-              <p className="text-sm md:text-base font-medium text-slate-500 uppercase tracking-widest">
+              <p className="text-xs md:text-sm font-bold text-emerald-900/40 uppercase tracking-widest">
                 {stat.label}
               </p>
             </motion.div>
