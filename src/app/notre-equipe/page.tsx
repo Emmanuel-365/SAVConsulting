@@ -9,22 +9,22 @@ export const metadata: Metadata = {
 
 const team = [
   {
-    name: "Emmanuel M.",
-    role: "Fondateur & Directeur Conseil",
-    desc: "Expert en gestion et passionné par l'optimisation digitale des processus comptables.",
-    initials: "EM"
+    name: "",
+    role: "",
+    desc: "",
+    initials: ""
   },
   {
-    name: "Sarah L.",
-    role: "Responsable Pôle Paie",
-    desc: "Spécialiste Silae avec 10 ans d'expérience dans la gestion sociale française.",
-    initials: "SL"
+    name: "",
+    role: "",
+    desc: "",
+    initials: ""
   },
   {
-    name: "Jean-Baptiste K.",
-    role: "Superviseur Comptable",
-    desc: "Garant de la conformité et de la qualité de la saisie sur les plateformes Cegid et Sage.",
-    initials: "JK"
+    name: "",
+    role: "",
+    desc: "",
+    initials: ""
   }
 ];
 

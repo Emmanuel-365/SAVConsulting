@@ -9,7 +9,7 @@ export default function LegalPage() {
           <div>
             <h2 className="text-2xl font-bold text-blue-900 mb-4">1. Éditeur du site</h2>
             <p>Le site est édité par SAV Consulting.</p>
-            <p>Email : contact.savconsulting@gmail.com</p>
+            <p>Email : contact.savconsuting@gmail.com</p>
             <p>Téléphone : +33 6 59 24 44 51</p>
           </div>
           <div>

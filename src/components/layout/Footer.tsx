@@ -25,10 +25,10 @@ export function Footer() {
               Production marque blanche, standards de qualité français.
             </p>
             <div className="flex items-center gap-4 pt-2">
-               <a href="#" className="h-10 w-10 rounded-full bg-blue-900/50 flex items-center justify-center text-blue-400 hover:bg-blue-600 hover:text-white transition-all">
+               <a href="https://www.linkedin.com/in/sav-consulting-externalisation-comptable-1b46523a8" className="h-10 w-10 rounded-full bg-blue-900/50 flex items-center justify-center text-blue-400 hover:bg-blue-600 hover:text-white transition-all">
                  <FaLinkedin className="h-5 w-5" />
                </a>
-               <a href="mailto:contact.savconsulting@gmail.com" className="h-10 w-10 rounded-full bg-blue-900/50 flex items-center justify-center text-blue-400 hover:bg-blue-600 hover:text-white transition-all">
+               <a href="mailto:contact.savconsuting@gmail.com" className="h-10 w-10 rounded-full bg-blue-900/50 flex items-center justify-center text-blue-400 hover:bg-blue-600 hover:text-white transition-all">
                  <Mail className="h-5 w-5" />
                </a>
             </div>
@@ -67,7 +67,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-blue-500 shrink-0" />
-                <a href="mailto:contact.savconsulting@gmail.com" className="hover:text-white transition-colors truncate">contact.savconsulting@gmail.com</a>
+                <a href="mailto:contact.savconsuting@gmail.com" className="hover:text-white transition-colors truncate">contact.savconsuting@gmail.com</a>
               </li>
             </ul>
           </div>

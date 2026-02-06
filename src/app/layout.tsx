@@ -74,7 +74,7 @@ export default function RootLayout({
     "description": "Services d'externalisation comptable et sociale en marque blanche pour les cabinets d'expertise comptable.",
     "url": domain,
     "telephone": "06 59 24 44 51",
-    "email": "contact.savconsulting@gmail.com",
+    "email": "contact.savconsuting@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "France",

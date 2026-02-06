@@ -72,7 +72,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-slate-500 mb-1">Email</p>
-                    <a href="mailto:contact.savconsulting@gmail.com" className="text-lg font-bold text-slate-900 hover:text-blue-600 transition-colors break-all">contact.savconsulting@gmail.com</a>
+                    <a href="mailto:contact.savconsuting@gmail.com" className="text-lg font-bold text-slate-900 hover:text-blue-600 transition-colors break-all">contact.savconsuting@gmail.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -81,7 +81,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-slate-500 mb-1">Disponibilité</p>
-                    <p className="text-base font-semibold text-slate-900">Lun - Ven | 09h - 18h (Paris)</p>
+                    <p className="text-base font-semibold text-slate-900">Lun - Sam | 09h - 18h (Paris)</p>
                   </div>
                 </div>
               </div>

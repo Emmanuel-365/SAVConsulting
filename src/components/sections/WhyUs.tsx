@@ -21,7 +21,7 @@ const features = [
   {
     icon: Fingerprint,
     title: "Sur-mesure",
-    desc: "Nous ne sommes pas une usine. Nous nous adaptons à VOTRE plan comptable et VOS méthodes de classement. Comme un collaborateur interne.",
+    desc: "Nous ne sommes pas une usine. Nous nous adaptons à VOTRE besoin et VOS méthodes de classement. Comme un collaborateur interne.",
     color: "bg-blue-50 text-slate-600",
     border: "border-blue-100"
   }

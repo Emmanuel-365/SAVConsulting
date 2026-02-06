@@ -37,7 +37,7 @@ export function FAQ() {
                 Quels logiciels maîtrisez-vous ?
               </AccordionTrigger>
               <AccordionContent className="text-slate-500 leading-relaxed text-base pb-6">
-                Nous sommes experts sur : <strong>Silae, Cegid, Sage Coala, ACD, Quadra, MyUnisoft et Pennylane</strong>. Si vous utilisez un outil spécifique, nous pouvons nous former rapidement lors de la phase pilote.
+                Nous sommes experts sur : <strong>Silae, Cegid, Sage Coala, ACD, Quadra, MyUnisoft, Loop, EBP et Pennylane</strong>. Si vous utilisez un outil spécifique, nous pouvons nous former rapidement lors de la phase pilote.
               </AccordionContent>
             </AccordionItem>
 
