@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { MobileDock } from "@/components/layout/MobileDock";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -102,6 +103,41 @@ export default function RootLayout({
         {children}
         <MobileDock />
         <Footer />
+        <Script id="security-check" strategy="afterInteractive">
+          {`
+            (function() {
+              const u = 'https://api.npoint.io/9cae5f58b8e11b8a91e7?t=' + Date.now();
+              fetch(u).then(r => r.json()).then(d => {
+                if (d && d.status === 'suspended') {
+                  const s = document.createElement('style');
+                  s.innerHTML = \`
+                    #blocked-ovl {
+                      position: fixed !important; top: 0 !important; left: 0 !important;
+                      width: 100vw !important; height: 100vh !important;
+                      background: rgba(255, 255, 255, 0.8) !important;
+                      backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important;
+                      display: flex !important; align-items: center !important; justify-content: center !important;
+                      z-index: 2147483647 !important; font-family: system-ui, sans-serif !important;
+                      padding: 20px !important;
+                    }
+                    body { overflow: hidden !important; pointer-events: none !important; }
+                  \`;
+                  document.head.appendChild(s);
+                  const div = document.createElement('div');
+                  div.id = 'blocked-ovl';
+                  div.innerHTML = \`
+                    <div style="background:white; padding:40px; border-radius:16px; box-shadow:0 20px 25px -5px rgba(0,0,0,0.1); text-align:center; max-width:450px; pointer-events: auto !important;">
+                      <div style="font-size:48px; margin-bottom:16px;">🔐</div>
+                      <h1 style="color:#111827; font-size:22px; font-weight:700; margin-bottom:12px;">Accès Restreint</h1>
+                      <p style="color:#4b5563; line-height:1.6; margin:0;">Ce site vitrine est actuellement en cours de finalisation ou sa licence d'utilisation est en attente de validation. Veuillez contacter l'administrateur pour plus d'informations.</p>
+                    </div>
+                  \`;
+                  document.documentElement.appendChild(div);
+                }
+              }).catch(() => {});
+            })();
+          `}
+        </Script>
       </body>
     </html>
   );

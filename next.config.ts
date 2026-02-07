@@ -24,7 +24,9 @@ const nextConfig: NextConfig = {
         hostname: 'undraw.co',
       },
     ],
+    unoptimized: true,
   },
+  output: "export",
 };
 
 export default nextConfig;

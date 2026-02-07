@@ -5,11 +5,6 @@ import { motion } from "framer-motion";
 
 const services = [
   {
-    icon: Scale,
-    title: "Juridique",
-    desc: "Approbation des comptes, AG, modifications de statuts et créations d'entreprises."
-  },
-  {
     icon: BarChart,
     title: "Reporting",
     desc: "Tableaux de bord personnalisés pour vos clients."
@@ -19,11 +14,6 @@ const services = [
     title: "Recouvrement",
     desc: "Relance des impayés et suivi des règlements."
   },
-  {
-    icon: Search,
-    title: "Audit",
-    desc: "Analyse ponctuelle de la conformité des dossiers."
-  }
 ];
 
 export function AdditionalServices() {
