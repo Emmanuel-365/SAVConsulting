@@ -21,8 +21,8 @@ const features = [
 export default function AccountingServicePage() {
   return (
     <main className="min-h-screen bg-white text-left">
-      <PageHero 
-        title="Saisie Comptable & Révision" 
+      <PageHero
+        title="Saisie Comptable & Révision"
         subtitle="Confiez-nous la production de base et libérez du temps pour le conseil stratégique."
         badge="Notre Expertise"
       />
@@ -36,7 +36,7 @@ export default function AccountingServicePage() {
             <p className="text-lg text-slate-600 leading-relaxed text-left">
               SAV Consulting prend en charge l&apos;intégralité de ce flux de production en s&apos;adaptant strictement à vos besoins spécifiques.
             </p>
-            
+
             <div className="grid sm:grid-cols-2 gap-4 text-left">
               {features.map((feature, i) => (
                 <div key={i} className="flex items-start gap-3">
@@ -54,14 +54,14 @@ export default function AccountingServicePage() {
           </div>
 
           <div className="relative">
-             <div className="bg-slate-50 rounded-3xl p-8 border border-slate-100 relative overflow-hidden group">
-                <img 
-                  src="/saisie-comptable.jpg" 
-                  alt="Illustration Saisie Comptable" 
-                  className="w-full h-auto opacity-90 group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent" />
-             </div>
+            <div className="bg-slate-50 rounded-3xl p-8 border border-slate-100 relative overflow-hidden group">
+              <img
+                src="/hero-saisie.png"
+                alt="Saisie Comptable Digitale"
+                className="w-full h-auto opacity-100 group-hover:scale-105 transition-transform duration-500 rounded-3xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent" />
+            </div>
           </div>
         </div>
       </section>
@@ -70,11 +70,11 @@ export default function AccountingServicePage() {
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-2xl font-bold text-slate-900 mb-12 uppercase tracking-widest text-sm opacity-60">Logiciels maîtrisés</h3>
           <div className="flex flex-wrap justify-center gap-12 grayscale opacity-40">
-             <span className="font-black text-2xl">SAGE</span>
-             <span className="font-black text-2xl">CEGID</span>
-             <span className="font-black text-2xl">ACD</span>
-             <span className="font-black text-2xl">PENNYLANE</span>
-             <span className="font-black text-2xl">MYUNISOFT</span>
+            <span className="font-black text-2xl">SAGE</span>
+            <span className="font-black text-2xl">CEGID</span>
+            <span className="font-black text-2xl">ACD</span>
+            <span className="font-black text-2xl">PENNYLANE</span>
+            <span className="font-black text-2xl">MYUNISOFT</span>
           </div>
         </div>
       </section>

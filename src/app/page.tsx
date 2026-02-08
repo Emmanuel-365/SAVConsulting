@@ -10,6 +10,12 @@ import { AdditionalServices } from "@/components/sections/AdditionalServices";
 import { Security } from "@/components/sections/Security";
 import { FAQ } from "@/components/sections/FAQ";
 import { CTA } from "@/components/sections/CTA";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "SAV Consulting | Votre Partenaire en Externalisation Comptable",
+  description: "Externalisez votre production comptable et sociale en toute confiance. Saisie, révision, paie et conseil pour experts-comptables.",
+};
 
 export default function Home() {
   return (

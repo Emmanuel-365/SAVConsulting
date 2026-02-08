@@ -33,17 +33,18 @@ const values = [
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-white">
-      <PageHero 
-        title="Notre Mission" 
+      <PageHero
+        title="Notre Mission"
         subtitle="Soutenir la croissance des cabinets d&apos;expertise comptable en prenant en charge leur production back-office."
         badge="Qui sommes-nous ?"
+        image="/hero-about.png"
       />
 
       <section className="py-24 container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-blue-900 leading-tight">
-              Une extension digitale <br/>
+              Une extension digitale <br />
               <span className="text-slate-600">pour votre cabinet.</span>
             </h2>
             <div className="space-y-4 text-slate-600 leading-relaxed text-lg">
@@ -52,15 +53,15 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="bg-blue-50 rounded-3xl p-12 border border-blue-100 relative overflow-hidden">
-             <div className="absolute top-0 right-0 p-8 text-blue-100/50">
-                <Target size={120} />
-             </div>
-             <blockquote className="relative z-10">
-                <p className="text-2xl font-medium text-blue-900 italic leading-relaxed">
-                  &quot;Notre objectif est de rendre l&apos;externalisation si fluide qu&apos;elle devienne un levier de rentabilité immédiat.&quot;
-                </p>
-                <footer className="mt-6 font-bold text-slate-600">— La Direction, SAV Consulting</footer>
-             </blockquote>
+            <div className="absolute top-0 right-0 p-8 text-blue-100/50">
+              <Target size={120} />
+            </div>
+            <blockquote className="relative z-10">
+              <p className="text-2xl font-medium text-blue-900 italic leading-relaxed">
+                &quot;Notre objectif est de rendre l&apos;externalisation si fluide qu&apos;elle devienne un levier de rentabilité immédiat.&quot;
+              </p>
+              <footer className="mt-6 font-bold text-slate-600">— La Direction, SAV Consulting</footer>
+            </blockquote>
           </div>
         </div>
       </section>

@@ -1,20 +1,37 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface PageHeroProps {
   title: string;
   subtitle: string;
   badge?: string;
+  image?: string;
 }
 
-export function PageHero({ title, subtitle, badge }: PageHeroProps) {
+export function PageHero({ title, subtitle, badge, image }: PageHeroProps) {
   return (
     <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-blue-950 text-white">
       {/* Background Decoration */}
       <div className="absolute inset-0 overflow-hidden -z-0">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_50%_-20%,rgba(16,185,129,0.2),transparent_70%)]" />
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 mix-blend-overlay" />
+        {image ? (
+          <>
+            <Image
+              src={image}
+              alt={title}
+              fill
+              className="object-cover opacity-30"
+              quality={90}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-950/80 to-blue-950/60" />
+          </>
+        ) : (
+          <>
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_50%_-20%,rgba(16,185,129,0.2),transparent_70%)]" />
+            <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 mix-blend-overlay" />
+          </>
+        )}
       </div>
 
       <div className="container mx-auto px-4 relative z-10 text-center">
@@ -24,14 +41,14 @@ export function PageHero({ title, subtitle, badge }: PageHeroProps) {
           transition={{ duration: 0.5 }}
         >
           {badge && (
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs md:text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs md:text-sm font-medium mb-6 backdrop-blur-sm">
               {badge}
             </span>
           )}
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 text-white">
+          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 text-white drop-shadow-lg">
             {title}
           </h1>
-          <p className="text-lg md:text-xl text-blue-100/60 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-blue-100/80 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
             {subtitle}
           </p>
         </motion.div>

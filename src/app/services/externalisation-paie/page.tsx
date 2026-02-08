@@ -35,10 +35,11 @@ const workflows = [
 export default function PayrollServicePage() {
   return (
     <main className="min-h-screen bg-white">
-      <PageHero 
-        title="Gestion Sociale & Paie" 
+      <PageHero
+        title="Gestion Sociale & Paie"
         subtitle="Externalisez la complexité de la paie pour garantir une conformité totale à vos clients."
         badge="Expertise Sociale"
+        image="/hero-paie.png"
       />
 
       <section className="py-24 container mx-auto px-4">
@@ -92,11 +93,11 @@ export default function PayrollServicePage() {
               </Button>
             </div>
             <div className="relative">
-               <div className="bg-white/5 rounded-3xl p-8 border border-white/10 backdrop-blur-sm">
-                  <div className="aspect-video bg-blue-900/50 rounded-xl overflow-hidden relative border border-blue-800 flex items-center justify-center">
-                     <span className="text-blue-500 italic">Expertise Silae Certifiée</span>
-                  </div>
-               </div>
+              <div className="bg-white/5 rounded-3xl p-8 border border-white/10 backdrop-blur-sm">
+                <div className="aspect-video bg-blue-900/50 rounded-xl overflow-hidden relative border border-blue-800 flex items-center justify-center">
+                  <span className="text-blue-500 italic">Expertise Silae Certifiée</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

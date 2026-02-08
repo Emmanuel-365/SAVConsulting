@@ -28,14 +28,39 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "SAV Consulting | Externalisation Comptable & Paie en Marque Blanche",
   description: "Libérez votre cabinet d'expertise comptable des tâches à faible valeur ajoutée. Externalisation saisie, lettrage et paie. Solution flexible et sécurisée.",
-  keywords: ["externalisation comptable", "marque blanche", "saisie comptable", "gestion de la paie", "cabinet expertise comptable", "back-office comptable", "SAV Consulting"],
+  keywords: [
+    "externalisation comptable",
+    "marque blanche",
+    "saisie comptable",
+    "gestion de la paie",
+    "cabinet expertise comptable",
+    "back-office comptable",
+    "SAV Consulting",
+    "sous-traitance comptable",
+    "collaborateur comptable déporté",
+    "externalisation paie silae"
+  ],
   authors: [{ name: "SAV Consulting" }],
   metadataBase: new URL(domain),
   alternates: {
     canonical: "/",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
-    title: "SAV Consulting | Externalisation Comptable Marque Blanche",
+    title: {
+      default: "SAV Consulting | Externalisation Comptable Marque Blanche",
+      template: "%s | SAV Consulting"
+    },
     description: "La solution de back-office pour les cabinets comptables modernes. Gagnez en rentabilité.",
     url: domain,
     siteName: "SAV Consulting",
@@ -43,7 +68,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.svg", 
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
         alt: "SAV Consulting - Externalisation Comptable",

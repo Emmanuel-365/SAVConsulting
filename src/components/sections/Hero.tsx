@@ -8,16 +8,16 @@ import Image from "next/image";
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-blue-950 pt-20">
-      
+
       {/* 1. IMMERSIVE BACKGROUND IMAGE */}
       <div className="absolute inset-0 z-0">
-        <Image 
-          src="/hero_image.jpg" 
-          alt="SAV Consulting - Expertise et Conseil"
+        <Image
+          src="/hero-home-new.png"
+          alt="SAV Consulting - Cabinet Comptable Moderne"
           fill
           priority
-          quality={40}
-          className="object-cover opacity-30 grayscale"
+          quality={90}
+          className="object-cover opacity-40"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-950/60 to-transparent z-10" />
@@ -32,11 +32,11 @@ export function Hero() {
 
       <div className="container px-4 md:px-6 relative z-30">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          
+
           {/* LEFT: MAIN CONTENT */}
           <div className="flex flex-col items-start text-left space-y-8">
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -49,7 +49,7 @@ export function Hero() {
               Solution Marque Blanche Premium
             </motion.div>
 
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -61,8 +61,8 @@ export function Hero() {
                 vendez du conseil.
               </span>
             </motion.h1>
-            
-            <motion.p 
+
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -71,7 +71,7 @@ export function Hero() {
               Gagnez du temps, économisez en masse salariale et préservez votre relation client. La solution marque blanche pour cabinets modernes.
             </motion.p>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
@@ -89,7 +89,7 @@ export function Hero() {
           </div>
 
           {/* RIGHT: ABOUT MISSION (Fills the space and fits on one screen) */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -102,35 +102,35 @@ export function Hero() {
                 </div>
                 <h2 className="text-2xl font-black text-white uppercase tracking-wider">Notre Mission</h2>
               </div>
-              
+
               <div className="space-y-6 text-blue-50/70 text-lg leading-relaxed">
                 <p>
-                  Ce projet est né d’un constat simple :​
+                  Ce projet est né d’un constat simple :
                   Les cabinets d’expertise comptable passent encore trop de temps sur des tâches
                   comptables récurrentes, au détriment du conseil, de la relation client et de la qualité de vie
-                  des équipes.                
+                  des équipes.
                 </p>
                 <p>
-Nous avons donc fait le choix de créer un service d’externalisation sur mesure pensé pour
-les cabinets d’expertise comptable et les entreprises, avec une approche volontairement
-simple, rigoureuse et respectueuse du métier.                </p>
+                  Nous avons donc fait le choix de créer un service d’externalisation sur mesure pensé pour
+                  les cabinets d’expertise comptable et les entreprises, avec une approche volontairement
+                  simple, rigoureuse et respectueuse du métier.                </p>
                 <p>
                   Notre rôle est clair : intervenir uniquement en back-office, sur des tâches standardisables et
-clairement définies, sans jamais interférer avec la relation client, le conseil ou les décisions
-techniques.
+                  clairement définies, sans jamais interférer avec la relation client, le conseil ou les décisions
+                  techniques.
                 </p>
                 <p>
                   Nous reposons sur des process documentés, des contrôles qualité et une transparence
-totale.​
-Le cabinet reste maître de ses dossiers, de ses clients et de ses choix.
+                  totale.
+                  Le cabinet reste maître de ses dossiers, de ses clients et de ses choix.
                 </p>
                 <p>
                   Nous travaillons dans l’ombre, pour permettre aux cabinets et entreprises de se concentrer
-sur ce qui fait réellement leur valeur.
+                  sur ce qui fait réellement leur valeur.
                 </p>
               </div>
             </div>
-            
+
             {/* Background decorative glow for the card */}
             <div className="absolute -z-10 -bottom-10 -right-10 w-64 h-64 bg-rose-500/10 rounded-full blur-[80px]" />
           </motion.div>
@@ -138,16 +138,16 @@ sur ce qui fait réellement leur valeur.
         </div>
 
         {/* MOBILE ABOUT (Only visible on small screens since the desktop version is now in the 2nd column) */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="lg:hidden mt-16 p-8 rounded-[2.5rem] bg-white/5 border border-white/10 backdrop-blur-xl"
         >
-           <h2 className="text-2xl font-black text-white mb-6">À propos de notre mission.</h2>
-           <p className="text-blue-50/70 text-base leading-relaxed">
-             Ce projet est né d&apos;un constat simple : Libérer les cabinets des tâches comptables récurrentes pour leur permettre de se concentrer sur le conseil et la relation client.
-           </p>
+          <h2 className="text-2xl font-black text-white mb-6">À propos de notre mission.</h2>
+          <p className="text-blue-50/70 text-base leading-relaxed">
+            Ce projet est né d&apos;un constat simple : Libérer les cabinets des tâches comptables récurrentes pour leur permettre de se concentrer sur le conseil et la relation client.
+          </p>
         </motion.div>
 
       </div>
