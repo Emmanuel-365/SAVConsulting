@@ -68,9 +68,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.svg",
-        width: 1200,
-        height: 630,
+        url: "/logo.png",
+        width: 512,
+        height: 512,
         alt: "SAV Consulting - Externalisation Comptable",
       },
     ],
@@ -79,11 +79,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SAV Consulting | Externalisation Comptable",
     description: "Libérez votre cabinet des tâches à faible valeur ajoutée.",
-    images: ["/og-image.svg"],
+    images: ["/logo.png"],
   },
   icons: {
-    icon: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon.ico",
   },
 };
 
@@ -95,8 +96,9 @@ export default function RootLayout({
   // Données structurées pour Google (Schema.org)
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": "Organization",
     "name": "SAV Consulting",
+    "logo": `${domain}/logo.png`,
     "description": "Services d'externalisation comptable et sociale en marque blanche pour les cabinets d'expertise comptable.",
     "url": domain,
     "telephone": "06 59 24 44 51",
@@ -105,11 +107,6 @@ export default function RootLayout({
       "@type": "PostalAddress",
       "addressLocality": "France",
       "addressCountry": "FR"
-    },
-    "serviceType": ["Comptabilité", "Paie", "Fiscalité"],
-    "offers": {
-      "@type": "Offer",
-      "description": "Audit gratuit et phase pilote sur un dossier"
     }
   };
 
