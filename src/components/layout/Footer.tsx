@@ -9,31 +9,37 @@ export function Footer() {
   return (
     <footer className="bg-blue-950 text-blue-100/80 border-t border-blue-900 pt-16 pb-32 md:pb-8">
       <div className="container mx-auto px-4">
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          
+
           {/* Brand Column */}
           <div className="space-y-6">
-            <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight text-white">
-              <div className="bg-blue-600 text-white p-1.5 rounded-lg">
-                <BarChart3 className="w-5 h-5" />
+            <Link href="/" className="flex items-center gap-2">
+              <div className="relative h-10 w-10">
+                <img
+                  src="/logo.png"
+                  alt="SAV Consulting"
+                  className="h-full w-full object-contain brightness-0 invert opacity-90"
+                />
               </div>
-              <span>SAV<span className="text-blue-500">Consulting</span></span>
+              <span className="font-bold text-xl tracking-tight text-white">
+                SAV<span className="text-blue-500">Consulting</span>
+              </span>
             </Link>
             <p className="text-blue-100/60 text-sm leading-relaxed max-w-xs">
               L&apos;extension digitale et flexible de votre cabinet d&apos;expertise comptable.
               Production marque blanche, standards de qualité français.
             </p>
             <div className="flex items-center gap-4 pt-2">
-               <a href="https://www.linkedin.com/in/sav-consulting-externalisation-comptable-1b46523a8" className="h-10 w-10 rounded-full bg-blue-900/50 flex items-center justify-center text-blue-400 hover:bg-blue-600 hover:text-white transition-all">
-                 <FaLinkedin className="h-5 w-5" />
-               </a>
-               <a href="mailto:contact.savconsuting@gmail.com" className="h-10 w-10 rounded-full bg-blue-900/50 flex items-center justify-center text-blue-400 hover:bg-blue-600 hover:text-white transition-all">
-                 <Mail className="h-5 w-5" />
-               </a>
+              <a href="https://www.linkedin.com/in/sav-consulting-externalisation-comptable-1b46523a8" className="h-10 w-10 rounded-full bg-blue-900/50 flex items-center justify-center text-blue-400 hover:bg-blue-600 hover:text-white transition-all">
+                <FaLinkedin className="h-5 w-5" />
+              </a>
+              <a href="mailto:contact.savconsuting@gmail.com" className="h-10 w-10 rounded-full bg-blue-900/50 flex items-center justify-center text-blue-400 hover:bg-blue-600 hover:text-white transition-all">
+                <Mail className="h-5 w-5" />
+              </a>
             </div>
           </div>
-          
+
           {/* Expertise Column */}
           <div>
             <h4 className="font-bold text-white mb-6">Expertise</h4>
@@ -73,7 +79,7 @@ export function Footer() {
           </div>
 
         </div>
-        
+
         <div className="border-t border-blue-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-blue-500/50">
           <p>&copy; {new Date().getFullYear()} SAV Consulting. Tous droits réservés.</p>
           <div className="flex gap-6">
