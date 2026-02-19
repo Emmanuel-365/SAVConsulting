@@ -49,18 +49,24 @@ export function Navbar() {
         <nav className={cn("container mx-auto transition-all duration-700 cubic-bezier(0.4, 0, 0.2, 1)", isScrolled ? "max-w-5xl bg-blue-950/80 backdrop-blur-xl border border-white/10 shadow-2xl rounded-full py-2 px-6" : "max-w-7xl bg-transparent py-2 px-0")}>
           <div className="flex items-center justify-between">
             {/* LOGO */}
-            <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight text-white group shrink-0" onClick={() => setIsOpen(false)}>
-              <div className="bg-blue-600 text-white p-1.5 rounded-xl group-hover:rotate-12 transition-transform duration-500 shadow-lg shadow-blue-500/20">
-                <BarChart3 className="w-5 h-5" />
+            <Link href="/" className="flex items-center gap-2 group shrink-0" onClick={() => setIsOpen(false)}>
+              <div className="relative h-10 w-10 transition-transform duration-500 group-hover:rotate-12">
+                <img
+                  src="/logo.png"
+                  alt="SAV Consulting"
+                  className="h-full w-full object-contain"
+                />
               </div>
-              <span className="hidden sm:inline italic">SAV<span className="text-white opacity-80">Consulting</span></span>
+              <span className="hidden sm:inline italic font-bold text-xl tracking-tight text-white">
+                SAV<span className="text-blue-500">Consulting</span>
+              </span>
             </Link>
 
             {/* DESKTOP NAV */}
             <div className="hidden md:flex items-center gap-1">
               <NavigationMenu>
                 <NavigationMenuList className="gap-1">
-                  
+
                   <NavigationMenuItem>
                     <NavigationMenuTrigger className={cn("bg-transparent font-semibold transition-colors h-10 px-4 rounded-full hover:bg-white/10 text-white")}>
                       Expertise
@@ -118,12 +124,12 @@ export function Navbar() {
             </div>
 
             {/* MOBILE BURGER BUTTON */}
-            <button 
-              onClick={() => setIsOpen(!isOpen)} 
+            <button
+              onClick={() => setIsOpen(!isOpen)}
               className={cn(
                 "md:hidden relative z-[110] p-2 -mr-2 flex flex-col gap-1.5 items-center justify-center w-10 h-10 group rounded-full transition-all duration-300",
                 "bg-white/10 backdrop-blur-md border border-white/10"
-              )} 
+              )}
               aria-label="Menu"
             >
               <motion.span animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }} className={cn("w-5 h-0.5 rounded-full transition-colors bg-white")} />
@@ -137,7 +143,7 @@ export function Navbar() {
       {/* FULLSCREEN MOBILE MENU */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: "100%" }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
@@ -145,7 +151,7 @@ export function Navbar() {
             className="fixed inset-0 z-[90] bg-blue-950 md:hidden overflow-y-auto pt-28 pb-12 px-8"
           >
             <div className="flex flex-col gap-10">
-              
+
               <div className="space-y-6">
                 <p className="text-[10px] font-black uppercase tracking-[0.2em] text-rose-400 opacity-80">Expertise</p>
                 <div className="grid gap-4">
@@ -179,8 +185,8 @@ export function Navbar() {
                   <Link href="/contact?subject=audit" onClick={() => setIsOpen(false)}>Réserver un pack</Link>
                 </Button>
                 <div className="flex items-center justify-center gap-2 text-white/40">
-                   <Mail size={14} />
-                   <span className="text-xs font-medium">Réponse sous 2h garantie</span>
+                  <Mail size={14} />
+                  <span className="text-xs font-medium">Réponse sous 2h garantie</span>
                 </div>
               </div>
             </div>
